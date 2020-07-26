@@ -1,14 +1,14 @@
 var player;
 
-const trackName = ["If You Want Love", "Stronger", "BMW", "lal"];
-const trackSinger = ["NF", "Kanye West", "BMW", "bi"];
+const trackName = ["If You Want Love", "Stronger", "Need You Still", "lal"];
+const trackSinger = ["NF", "Kanye West", "Ivan B feat. Keith Fontano", "bi"];
 const trackCover = ["url(https://i.imgur.com/zmAR40Y.jpg)", 
                     "url(https://i.imgur.com/5BZ7vxg.jpg)", 
-                    "url(https://images.genius.com/f3dc932dcf3a3d218d8e387297bf5afe.1000x1000x1.jpg)", 
+                    "url(https://i.imgur.com/bfKgV91.jpg)", 
 					"url(https://images.genius.com/093524f55308e0c3a99f8d6f7746a3bf.1000x1000x1.jpg)"];
 const trackBack = ["url(https://images2.imgbox.com/3e/e9/34oiP2E6_o.gif)", 
                     "url(https://i.imgur.com/CoXRvir.gif)", 
-                    "url(https://images.genius.com/f3dc932dcf3a3d218d8e387297bf5afe.1000x1000x1.jpg)", 
+                    "url(https://images2.imgbox.com/27/96/lLrZ1Sg3_o.gif)", 
 					"url(https://images.genius.com/093524f55308e0c3a99f8d6f7746a3bf.1000x1000x1.jpg)"];					
 let index = 0;
 
@@ -19,7 +19,7 @@ function onYouTubeIframeAPIReady() {
         videoId: 'LfxY1sg5_rw',
         playerVars: {
             color: 'white',
-			playlist: 'PsO6ZnUZI0g,0yW7w8F2TVA',
+			playlist: 'PsO6ZnUZI0g,EVzUk-uk_Nc',
 			controls: '0',
         },
         events: {
