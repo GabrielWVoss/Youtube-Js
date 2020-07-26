@@ -1,42 +1,24 @@
 var player;
 
-const trackName = ["If You Want Love", "Stronger", "Need You Still", "Warriors", "Not Afraid", "Calm Snow",
-                        "Sober", "Trauma", "We're Tired", "Human", "Toosie Slide"];
-const trackSinger = ["NF", "Kanye West", "Ivan B feat. Keith Fontano", "Imagine Dragons", "Eminem",
-                        "G-Eazy feat. Charlie Puth", "NF", "I See Stars", "The Blancos feat. Joyner Lucas", "The Killers",
-                        "Drake"];
-const trackCover = ["url(https://i.imgur.com/zmAR40Y.jpg)", 
-                    "url(https://i.imgur.com/5BZ7vxg.jpg)", 
-                    "url(https://i.imgur.com/bfKgV91.jpg)", 
-                    "url(https://i.imgur.com/lOpDLkq.jpg)",
-                    "url(https://i.imgur.com/RRFrOq0.jpg)",
-                    "url(https://i.imgur.com/AGixERK.jpg)",
-                    "url(https://i.imgur.com/nksm6aY.png)",
-                    "url(https://i.imgur.com/3jitHJ1.jpg)",
-                    "url(https://i.imgur.com/Rkgzah9.jpg)",
-                    "url(https://i.imgur.com/zsLvzVv.png)",
-                    "url(https://i.imgur.com/LQ807IS.jpg)" ];
-const trackBack = ["url(https://images2.imgbox.com/3e/e9/34oiP2E6_o.gif)", 
-                    "url(https://i.imgur.com/CoXRvir.gif)", 
-                    "url(https://images2.imgbox.com/27/96/lLrZ1Sg3_o.gif)", 
-                    "url(https://i.imgur.com/I4j4SMS.gif)",
-                    "url(https://i.imgur.com/CIRAFDn.gif)",
-                    "url(https://images2.imgbox.com/c5/d3/WiCQoecO_o.gif)",
-                    "url(https://images2.imgbox.com/49/d2/JNo3O55t_o.gif)",
-                    "url(https://images2.imgbox.com/8a/dd/tCb0VnTc_o.gif)",
-                    "url(https://images2.imgbox.com/29/c2/xIiarIbV_o.gif)",
-                    "url(https://images2.imgbox.com/8e/93/2a4LrmpW_o.gif)",
-                    "url(https://images2.imgbox.com/87/a4/oqKNLfh1_o.gif)" ];					
+const trackName = ["I Want It That Way", "Welcome to My Life", "Não Sei Viver Sem Ter Você" ];
+const trackSinger = ["Backstreet Boys", "Simple Plan", "CPM 22"];
+const trackCover = ["url(https://i.imgur.com/fdHAAkT.jpg)",
+                    "url(https://i.imgur.com/NbkpB8f.jpg)",
+                    "url(https://i.imgur.com/fIxnyc1.jpg)" ];
+
+const trackBack = ["url(https://images2.imgbox.com/31/59/MfhseZbR_o.gif)",
+                    "url(https://i.imgur.com/fSIxdME.gif)",
+                    "url(https://images2.imgbox.com/d2/73/zD6XDiZH_o.gif)" ];					
 let index = 0;
 
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('video-placeholder', {
         width: 600,
         height: 400,
-        videoId: 'LfxY1sg5_rw',
+        videoId: '4fndeDfaWCg',
         playerVars: {
             color: 'white',
-            playlist: 'PsO6ZnUZI0g,EVzUk-uk_Nc,o3W5ngVTtRE,j5-yKhDd64s,LXvkrEwy0Xs,HKIIgYFhQlE,akhttJU-0mc,m0J8GY1BmDU, k4jR9P9YJGo, xXuGq4Xf77g',
+            playlist: 'r0U0AlLVqpk, iQhVPNY7S9k',
 			controls: '0',
         },
         events: {
