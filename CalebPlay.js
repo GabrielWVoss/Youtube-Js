@@ -1,16 +1,26 @@
 var player;
 
-const trackName = ["I Want It That Way", "Welcome to My Life", "Não Sei Viver Sem Ter Você", "That's What I Like" ];
-const trackSinger = ["Backstreet Boys", "Simple Plan", "CPM 22", "Beyoncé feat. Jay-Z", "Bruno Mars"];
+const trackName = ["I Want It That Way", "Welcome to My Life", "Não Sei Viver Sem Ter Você", "That's What I Like",
+                    "3005", "Who Let The Dogs Out", "Good Girls", "Boys Will Be Boys" ];
+const trackSinger = ["Backstreet Boys", "Simple Plan", "CPM 22", "Beyoncé feat. Jay-Z", "Bruno Mars",
+                    "Childish Gambino", "Baha Men", "5 Seconds of Summer", "Dua Lipa"];
 const trackCover = ["url(https://i.imgur.com/fdHAAkT.jpg)",
                     "url(https://i.imgur.com/NbkpB8f.jpg)",
                     "url(https://i.imgur.com/fIxnyc1.jpg)",
-                    "url(https://i.imgur.com/VlWlCXk.jpg)" ];
+                    "url(https://i.imgur.com/VlWlCXk.jpg)",
+                    "url(https://i.imgur.com/pjXdyM9.jpg)",
+                    "url(https://i.imgur.com/CNXJri9.jpg)",
+                    "url(https://i.imgur.com/MpzkuRb.jpg)",
+                    "url(https://i.imgur.com/wgxhvl5.jpg)" ];
 
 const trackBack = ["url(https://images2.imgbox.com/31/59/MfhseZbR_o.gif)",
                     "url(https://i.imgur.com/fSIxdME.gif)",
                     "url(https://images2.imgbox.com/d2/73/zD6XDiZH_o.gif)",
-                    "url(https://i.imgur.com/ltwxaGz.gif)" ];					
+                    "url(https://i.imgur.com/ltwxaGz.gif)",
+                    "url(https://images2.imgbox.com/c0/0e/Oqp86bxg_o.gif)",
+                    "url(https://images2.imgbox.com/a8/cf/cHXqkscL_o.gif)",
+                    "url(https://i.imgur.com/J1g4MvY.gif)",
+                    "url(https://images2.imgbox.com/8d/53/mXR9Of1a_o.gif)" ];					
 let index = 0;
 
 function onYouTubeIframeAPIReady() {
@@ -20,7 +30,7 @@ function onYouTubeIframeAPIReady() {
         videoId: '4fndeDfaWCg',
         playerVars: {
             color: 'white',
-            playlist: 'r0U0AlLVqpk, iQhVPNY7S9k, PMivT7MJ41M',
+            playlist: 'r0U0AlLVqpk,iQhVPNY7S9k,PMivT7MJ41M,tG35R8F2j8k,Qkuu0Lwb5EM,292XUJ5jH7U,k0QWX2M7W7M',
 			controls: '0',
         },
         events: {
