@@ -1,6 +1,6 @@
 var player;
 
-const trackName = ["I Want It That Way", "Welcome to My Life", "Não Sei Viver Sem Ter Você", "That's What I Like",
+const trackName = ["I Want It That Way", "Welcome to My Life", "Não Sei Viver...", "That's What I Like",
                     "3005", "Who Let The Dogs Out", "Good Girls", "Boys Will Be Boys" ];
 const trackSinger = ["Backstreet Boys", "Simple Plan", "CPM 22", "Beyoncé feat. Jay-Z", "Bruno Mars",
                     "Childish Gambino", "Baha Men", "5 Seconds of Summer", "Dua Lipa"];
