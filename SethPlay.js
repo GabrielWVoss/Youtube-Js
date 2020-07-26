@@ -1,7 +1,7 @@
 var player;
 
 const trackName = ["If You Want Love", "Stronger", "Need You Still", "Warriors", "Not Afraid", "Calm Snow"];
-const trackSinger = ["NF", "Kanye West", "Ivan B feat. Keith Fontano", "Eminem", "I See Stars"];
+const trackSinger = ["NF", "Kanye West", "Ivan B feat. Keith Fontano", "Imagine Dragons", "Eminem", "I See Stars"];
 const trackCover = ["url(https://i.imgur.com/zmAR40Y.jpg)", 
                     "url(https://i.imgur.com/5BZ7vxg.jpg)", 
                     "url(https://i.imgur.com/bfKgV91.jpg)", 
