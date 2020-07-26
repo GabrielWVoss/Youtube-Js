@@ -1,10 +1,11 @@
 var player;
 
 const trackName = ["If You Want Love", "Stronger", "Need You Still", "Warriors", "Not Afraid", "Calm Snow",
-                        "Sober", "Trauma", "We're Tired", "Human", "Toosie Slide"];
-const trackSinger = ["NF", "Kanye West", "Ivan B feat. Keith Fontano", "Imagine Dragons", "Eminem",
-                        "G-Eazy feat. Charlie Puth", "NF", "I See Stars", "The Blancos feat. Joyner Lucas", "The Killers",
-                        "Drake"];
+                        "Sober", "Trauma", "We're Tired", "Human", "Toosie Slide", "Stan Spotfy Recorded",
+                        "you should see me in a crown"];
+const trackSinger = ["NF", "Kanye West", "Ivan B feat. Keith Fontano", "Imagine Dragons", "Eminem", "I See Stars",
+                        "G-Eazy feat. Charlie Puth", "NF", "The Blancos feat. Joyner Lucas", "The Killers",
+                        "Drake", "Alec Benjamin", "Billie Eilish"];
 const trackCover = ["url(https://i.imgur.com/zmAR40Y.jpg)", 
                     "url(https://i.imgur.com/5BZ7vxg.jpg)", 
                     "url(https://i.imgur.com/bfKgV91.jpg)", 
@@ -15,7 +16,9 @@ const trackCover = ["url(https://i.imgur.com/zmAR40Y.jpg)",
                     "url(https://i.imgur.com/3jitHJ1.jpg)",
                     "url(https://i.imgur.com/Rkgzah9.jpg)",
                     "url(https://i.imgur.com/zsLvzVv.png)",
-                    "url(https://i.imgur.com/LQ807IS.jpg)" ];
+                    "url(https://i.imgur.com/LQ807IS.jpg)",
+                    "url(https://i.imgur.com/Jo9Yg77.jpg)",
+                    "url(https://i.imgur.com/6eYNzML.jpg)" ];
 const trackBack = ["url(https://images2.imgbox.com/3e/e9/34oiP2E6_o.gif)", 
                     "url(https://i.imgur.com/CoXRvir.gif)", 
                     "url(https://images2.imgbox.com/27/96/lLrZ1Sg3_o.gif)", 
@@ -26,7 +29,9 @@ const trackBack = ["url(https://images2.imgbox.com/3e/e9/34oiP2E6_o.gif)",
                     "url(https://images2.imgbox.com/8a/dd/tCb0VnTc_o.gif)",
                     "url(https://images2.imgbox.com/29/c2/xIiarIbV_o.gif)",
                     "url(https://images2.imgbox.com/8e/93/2a4LrmpW_o.gif)",
-                    "url(https://images2.imgbox.com/87/a4/oqKNLfh1_o.gif)" ];					
+                    "url(https://images2.imgbox.com/87/a4/oqKNLfh1_o.gif)",
+                    "url(https://images2.imgbox.com/f5/da/91Z2X238_o.gif)",
+                    "url(https://images2.imgbox.com/86/f9/h8VeP7Qz_o.gif)" ];					
 let index = 0;
 
 function onYouTubeIframeAPIReady() {
@@ -36,7 +41,7 @@ function onYouTubeIframeAPIReady() {
         videoId: 'LfxY1sg5_rw',
         playerVars: {
             color: 'white',
-            playlist: 'PsO6ZnUZI0g,EVzUk-uk_Nc,o3W5ngVTtRE,j5-yKhDd64s,LXvkrEwy0Xs,HKIIgYFhQlE,akhttJU-0mc,m0J8GY1BmDU, k4jR9P9YJGo, xXuGq4Xf77g',
+            playlist: 'PsO6ZnUZI0g,EVzUk-uk_Nc,o3W5ngVTtRE,j5-yKhDd64s,LXvkrEwy0Xs,HKIIgYFhQlE,akhttJU-0mc,m0J8GY1BmDU, k4jR9P9YJGo, xXuGq4Xf77g, 5Qtirss0tAM, Ah0Ys50CqO8',
 			controls: '0',
         },
         events: {
