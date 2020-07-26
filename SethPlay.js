@@ -1,15 +1,17 @@
 var player;
 
-const trackName = ["If You Want Love", "Stronger", "Need You Still", "Warriors"];
-const trackSinger = ["NF", "Kanye West", "Ivan B feat. Keith Fontano", "Imagine Dragons"];
+const trackName = ["If You Want Love", "Stronger", "Need You Still", "Warriors", "Not Afraid"];
+const trackSinger = ["NF", "Kanye West", "Ivan B feat. Keith Fontano", "Eminem"];
 const trackCover = ["url(https://i.imgur.com/zmAR40Y.jpg)", 
                     "url(https://i.imgur.com/5BZ7vxg.jpg)", 
                     "url(https://i.imgur.com/bfKgV91.jpg)", 
-					"url(https://i.imgur.com/lOpDLkq.jpg)"];
+                    "url(https://i.imgur.com/lOpDLkq.jpg)",
+                    "url(https://i.imgur.com/RRFrOq0.jpg)"];
 const trackBack = ["url(https://images2.imgbox.com/3e/e9/34oiP2E6_o.gif)", 
                     "url(https://i.imgur.com/CoXRvir.gif)", 
                     "url(https://images2.imgbox.com/27/96/lLrZ1Sg3_o.gif)", 
-					"url(https://i.imgur.com/I4j4SMS.gif)"];					
+                    "url(https://i.imgur.com/I4j4SMS.gif)",
+                    "url(https://i.imgur.com/CIRAFDn.gif)"];					
 let index = 0;
 
 function onYouTubeIframeAPIReady() {
