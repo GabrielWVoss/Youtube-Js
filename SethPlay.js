@@ -2,7 +2,7 @@ var player;
 
 const trackName = ["If You Want Love", "Stronger", "Need You Still", "Warriors", "Not Afraid", "Calm Snow",
                         "Sober", "Trauma", "We're Tired", "Human", "Toosie Slide", "Stan Spotfy Recorded",
-                        "you should see me in a crown"];
+                        "you should see me..."];
 const trackSinger = ["NF", "Kanye West", "Ivan B feat. Keith Fontano", "Imagine Dragons", "Eminem", "I See Stars",
                         "G-Eazy feat. Charlie Puth", "NF", "The Blancos feat. Joyner Lucas", "The Killers",
                         "Drake", "Alec Benjamin", "Billie Eilish"];
