@@ -1,23 +1,25 @@
 var player;
 
 const trackName = ["If You Want Love", "Stronger", "Need You Still", "Warriors", "Not Afraid", "Calm Snow",
-                        "Sober"];
+                        "Sober", "Trauma"];
 const trackSinger = ["NF", "Kanye West", "Ivan B feat. Keith Fontano", "Imagine Dragons", "Eminem",
-                        "G-Eazy feat. Charlie Puth"];
+                        "G-Eazy feat. Charlie Puth", "NF"];
 const trackCover = ["url(https://i.imgur.com/zmAR40Y.jpg)", 
                     "url(https://i.imgur.com/5BZ7vxg.jpg)", 
                     "url(https://i.imgur.com/bfKgV91.jpg)", 
                     "url(https://i.imgur.com/lOpDLkq.jpg)",
                     "url(https://i.imgur.com/RRFrOq0.jpg)",
                     "url(https://i.imgur.com/AGixERK.jpg)",
-                    "url(https://i.imgur.com/nksm6aY.png)" ];
+                    "url(https://i.imgur.com/nksm6aY.png)",
+                    "url(https://i.imgur.com/3jitHJ1.jpg)" ];
 const trackBack = ["url(https://images2.imgbox.com/3e/e9/34oiP2E6_o.gif)", 
                     "url(https://i.imgur.com/CoXRvir.gif)", 
                     "url(https://images2.imgbox.com/27/96/lLrZ1Sg3_o.gif)", 
                     "url(https://i.imgur.com/I4j4SMS.gif)",
                     "url(https://i.imgur.com/CIRAFDn.gif)",
                     "url(https://images2.imgbox.com/c5/d3/WiCQoecO_o.gif)",
-                    "url(https://images2.imgbox.com/49/d2/JNo3O55t_o.gif)" ];					
+                    "url(https://images2.imgbox.com/49/d2/JNo3O55t_o.gif)",
+                    "url(https://images2.imgbox.com/8a/dd/tCb0VnTc_o.gif)" ];					
 let index = 0;
 
 function onYouTubeIframeAPIReady() {
@@ -27,7 +29,7 @@ function onYouTubeIframeAPIReady() {
         videoId: 'LfxY1sg5_rw',
         playerVars: {
             color: 'white',
-            playlist: 'PsO6ZnUZI0g,EVzUk-uk_Nc,o3W5ngVTtRE,j5-yKhDd64s,LXvkrEwy0Xs,HKIIgYFhQlE',
+            playlist: 'PsO6ZnUZI0g,EVzUk-uk_Nc,o3W5ngVTtRE,j5-yKhDd64s,LXvkrEwy0Xs,HKIIgYFhQlE,akhttJU-0mc',
 			controls: '0',
         },
         events: {
