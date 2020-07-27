@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="https://files.jcink.net/uploads2/elitefour/Bibs_Templates/youtube1.css" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+
+#youtube {
+    --colorPrime: #9B3039;
+    --colorBg: #94444B;
+    --colorRanger: #E6CBCE;
+
+    --shadow: 0px 2px 17px 0px rgba(0,0,0,0.33);
+    --shadowCur: 0px 2px 17px 0px rgba(0,0,0,0.53);
+    --shadowPlay: 0px 2px 21px 1px rgba(0,0,0,0.22);
+}
+
+</style>
+
+<body>
+    <div class="container-header"> </div>
+<div id="youtube" class="you-back"> 
+<div id="video-placeholder"></div>
+
+
+
+<div class="holder-cover">
+<div class="cover-prev" id="prev"> </div> 
+<div class="cover-current"> </div> 
+<div class="cover-next" id="next"> </div> 
+</div> 
+
+<div class="you-player"> 
+<i id="play" class="material-icons">play_arrow</i>
+<i id="pause" class="material-icons" style="display: none;">pause </i>
+
+<div class="you-info" style="line-height: 20%; margin-top: 3px;"> 
+<b class="title"> </b> <br>
+<singer class="singer"> </singer> 
+</div>  
+
+<a href="https://open.spotify.com/playlist/6rbuHvQ8biID0J8Dz2Rz1F?si=hwQsYGBbQny-VGinYG1RFg" target="blanck"> Spotify </a>
+
+<div class="you-bar" style="line-height: 50%;"> 
+<div id="current-time" class="you-time"> </div>
+
+<input type="range" id="progress-bar" value="0">
+
+<div id="duration" class="you-time"> </div>
+</div>  
+
+</div></div>
+</body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="LorenzoPlay.js"></script>
