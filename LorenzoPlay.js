@@ -1,6 +1,6 @@
 var player;
 
-const trackName = ["I Just Can't Wai...", "Il ballo delle incertezza", "Guerriero" ];
+const trackName = ["I Just Can't Wait...", "Il ballo delle incertezza", "Guerriero" ];
 const trackSinger = ["From 'The Lion King'", "Ultimo", "Marco Mengoni"];
 const trackCover = ["url(https://i.imgur.com/r7MJ81F.jpg)",
                     "url(https://i.imgur.com/3B89bpQ.jpg)",
