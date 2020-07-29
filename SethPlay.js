@@ -44,7 +44,7 @@ function onYouTubeIframeAPIReady() {
         videoId: 'LfxY1sg5_rw',
         playerVars: {
             color: 'white',
-			playlist: 'PsO6ZnUZI0g,0yW7w8F2TVA',
+			playlist: 'PsO6ZnUZI0g,EVzUk-uk_Nc,j5-yKhDd64s,8OARiNiJ_w8,akhttJU-0mc,xXuGq4Xf77g,bELPHxnaAFk,Ah0Ys50CqO8,y7ogiYZDsLI,ytQ5CYE1VZw,VDvr08sCPOc,4hBwH3thlPs,SkK2J9M1e1s',
 			controls: '0',
         },
         events: {
