@@ -1,46 +1,50 @@
 var player;
+var player2;
 
-const trackName = ["I Want It That Way", "Welcome to My Life", "Não Sei Viver...", "That's What I Like",
-                    "3005", "Who Let The Dogs Out", "Good Girls", "Boys Will Be Boys", "If You Don't Love Yourself",
-                    "Hotel California", "Young Blood", "Put Your Records On" ];
-const trackSinger = ["Backstreet Boys", "Simple Plan", "CPM 22", "Bruno Mars", 
-                    "Childish Gambino", "Baha Men", "5 Seconds of Summer", "Dua Lipa", "The Script",
-                    "Eagles", "5 Seconds of Summer", "Corinne Bailey Rae"];
+let index = 0;
+let index2 = 0;
+
+const trackName = ["I Want It That Way", "Welcome to My Life", "Não Sei Viver...",
+                    "Who Let The Dogs Out", "Good Girls",
+                    "Hotel California", "Put Your Records On" ];
+const trackSinger = ["Backstreet Boys", "Simple Plan", "CPM 22",
+                    "Baha Men", "5 Seconds of Summer",
+                    "Eagles", "Corinne Bailey Rae"];
 const trackCover = ["url(https://i.imgur.com/fdHAAkT.jpg)",
                     "url(https://i.imgur.com/NbkpB8f.jpg)",
                     "url(https://i.imgur.com/fIxnyc1.jpg)",
-                    "url(https://i.imgur.com/VlWlCXk.jpg)",
-                    "url(https://i.imgur.com/pjXdyM9.jpg)",
                     "url(https://i.imgur.com/CNXJri9.jpg)",
                     "url(https://i.imgur.com/MpzkuRb.jpg)",
-                    "url(https://i.imgur.com/wgxhvl5.jpg)",
-                    "url(https://i.imgur.com/iBng3Eb.jpg)",
                     "url(https://i.imgur.com/9Quliag.jpg)",
-                    "url(https://i.imgur.com/Y4TIIy5.png)",
                     "url(https://i.imgur.com/4fzE91e.jpg)" ];
-
-const trackBack = ["url(https://images2.imgbox.com/31/59/MfhseZbR_o.gif)",
-                    "url(https://i.imgur.com/fSIxdME.gif)",
-                    "url(https://images2.imgbox.com/d2/73/zD6XDiZH_o.gif)",
-                    "url(https://i.imgur.com/ltwxaGz.gif)",
-                    "url(https://images2.imgbox.com/c0/0e/Oqp86bxg_o.gif)",
-                    "url(https://images2.imgbox.com/a8/cf/cHXqkscL_o.gif)",
-                    "url(https://i.imgur.com/J1g4MvY.gif)",
-                    "url(https://images2.imgbox.com/8d/53/mXR9Of1a_o.gif)",
-                    "url(https://i.imgur.com/pmDp8cb.gif)",
-                    "url(https://i.imgur.com/QlJ3cWt.gif)",
-                    "url(https://images2.imgbox.com/ef/75/NUzOEjDZ_o.gif)",
-                    "url(https://i.imgur.com/4pRK50y.gif)" ];					
-let index = 0;
+                    
+const trackName2 = ["That's What I Like", ];
+const trackSinger2 = ["Bruno Mars", ];
+const trackCover2 = ["url(https://i.imgur.com/zmAR40Y.jpg)", ];
 
 function onYouTubeIframeAPIReady() {
-    player = new YT.Player('video-placeholder', {
+    onload=player = new YT.Player('video', {
         width: 600,
         height: 400,
-        videoId: '4fndeDfaWCg',
+        videoId: 'LfxY1sg5_rw',
         playerVars: {
             color: 'white',
-            playlist: 'r0U0AlLVqpk,iQhVPNY7S9k,PMivT7MJ41M,tG35R8F2j8k,Qkuu0Lwb5EM,292XUJ5jH7U,k0QWX2M7W7M,oVSHtf2Tb-E,EqPtz5qN7HM,Jqs5EaAaueA,BSpoa7TsiD0',
+			playlist: 'PsO6ZnUZI0g,EVzUk-uk_Nc,akhttJU-0mc,xXuGq4Xf77g,y7ogiYZDsLI,ytQ5CYE1VZw,VDvr08sCPOc,4hBwH3thlPs,SkK2J9M1e1s,5gLoEBbZNis,854WQhuSISc,5qm8PH4xAss,bKDdT_nyP54',
+			controls: '0',
+        },
+        events: {
+            'onReady': initialize,
+            'onStateChange': onPlayerStateChange
+        }
+    })
+
+    onload=player2 = new YT.Player('video2', {
+        width: 600,
+        height: 400,
+        videoId: 'j5-yKhDd64s',
+        playerVars: {
+            color: 'white',
+			playlist: 'PsO6ZnUZI0g,0yW7w8F2TVA',
 			controls: '0',
         },
         events: {
@@ -50,14 +54,9 @@ function onYouTubeIframeAPIReady() {
     });
 }
 
-function initialize(){
-    $(".title").text(trackName[index]);
-	$(".singer").text(trackSinger[index]);
-	$(".you-back").css("background-image", trackBack[index]);
-    $(".cover-current").css("background-image", trackCover[index]);
-    $(".cover-next").css("background-image", trackCover[index + 1]);
-    $(".cover-prev").css("background-image", trackCover[index - 1]);
+// Both Players
 
+function initialize(){
     // Update the controls on load
     updateTimerDisplay();
     updateProgressBar();
@@ -75,59 +74,24 @@ function initialize(){
 function onPlayerStateChange(event) {
     if (event.data == YT.PlayerState.ENDED && index >= 0 && index < trackName.length - 1) {
         index++;
-		$(".title").text(trackName[index]);
-		$(".singer").text(trackSinger[index]);
-		$(".you-back").css("background-image", trackBack[index]);
-		$(".cover-current").css("background-image", trackCover[index]);
-		$(".cover-next").css("background-image", trackCover[index + 1]);
-		$(".cover-prev").css("background-image", trackCover[index - 1]); }
+        $("h3").text(trackName[index]);
+        $("h5").text(trackSinger[index]);
+        $("#playerDiscCover1").css("background-image", trackCover[index]);
+    }
+    else if (event.data == YT.Player2State.ENDED && index >= 0 && index < trackName.length - 1) {
+        index2++;
+        $("h3").text(trackName[index]);
+        $("h5").text(trackSinger[index]);
+        $(".playerDiscCover").css("background-image", trackCover[index]); }
 }
-
-$('#next').on('click', function () {
-    if (index >= 0 && index < trackName.length - 1) {
-        index++;
-        $('#play').css("display", "none");
-		$('#pause').css("display", "block");
-		$(".you-back").css("background-image", trackBack[index]);
-		$(".cover-current").css("background-image", trackCover[index]);
-        $(".cover-next").css("background-image", trackCover[index + 1]);
-        $(".cover-prev").css("background-image", trackCover[index - 1]);
-        $(".title").text(trackName[index]);
-        $(".singer").text(trackSinger[index]);
-        player.nextVideo() }
-});
-
-$('#prev').on('click', function () { 
-    if (index > 0 && index < trackName.length) {
-   		index--;
-		$('#play').css("display", "none");
-		$('#pause').css("display", "block");
-		$(".you-back").css("background-image", trackBack[index]);
-		$(".cover-current").css("background-image", trackCover[index]);
-		$(".cover-next").css("background-image", trackCover[index + 1]);
-		$(".cover-prev").css("background-image", trackCover[index - 1]);
-		$(".title").text(trackName[index]);
-		$(".singer").text(trackSinger[index]);
-		player.previousVideo() }
-});
-
-$('#play').on('click', function () { 
-    $('#play').css("display", "none");
-    $('#pause').css("display", "block");
-    player.playVideo(); 
-});
-
-$('#pause').on('click', function () {
-    $('#play').css("display", "block");
-    $('#pause').css("display", "none");
-    player.pauseVideo(); 
-});
 
 // This function is called by initialize()
 function updateTimerDisplay(){
     // Update current time text display.
-    $('#current-time').text(formatTime( player.getCurrentTime() ));
-    $('#duration').text(formatTime( player.getDuration() ));
+    $('#current-time1').text(formatTime( player.getCurrentTime() ));
+    $('#duration1').text(formatTime( player.getDuration() ));
+    $('#current-time2').text(formatTime( player2.getCurrentTime() ));
+    $('#duration2').text(formatTime( player2.getDuration() ));
 }
 
 function formatTime(time){
@@ -141,7 +105,64 @@ function formatTime(time){
     return minutes + ":" + seconds;
 }
 
-$('#progress-bar').on('mouseup touchend', function (e) {
+// This function is called by initialize()
+function updateProgressBar(){
+    // Update the value of our progress bar accordingly.
+    $('#progress-bar1').val((player.getCurrentTime() / player.getDuration()) * 100);
+    $('#progress-bar2').val((player2.getCurrentTime() / player2.getDuration()) * 100);
+}
+
+// Player 1
+
+$('#playerCD1').on('click', function () { 
+    $('#play1').css("display", "none");
+    $('#pause1').css("display", "block");
+    $('#playerDisc1').css("right", "40px");
+    $('#playerDisc2').css("right", "210px");
+    $("#title1").text(trackName[index]);
+    $("#singer1").text(trackSinger[index]);
+    $("#playerDiscCover1").css("background-image", trackCover[index]);
+    player.playVideo(); 
+    player2.pauseVideo(); 
+});
+
+$('#play1').on('click', function () { 
+    $('#play1').css("display", "none");
+    $('#pause1').css("display", "block");
+    $('#playerDisc1').css("right", "40px");
+    player.playVideo(); 
+});
+
+$('#pause1').on('click', function () {
+    $('#play1').css("display", "block");
+    $('#pause1').css("display", "none");
+    $('#playerDisc1').css("right", "150px");
+    player.pauseVideo(); 
+});
+
+$('#next1').on('click', function () {
+    if (index >= 0 && index < trackName.length - 1) {
+        index++;
+        $("#title1").text(trackName[index]);
+        $("#singer1").text(trackSinger[index]);
+        $("#playerDiscCover1").css("background-image", trackCover[index]);
+        $('#play1').css("display", "none");
+        $('#pause1').css("display", "block");
+        player.nextVideo() }
+});
+
+$('#prev1').on('click', function () { 
+    if (index > 0 && index < trackName.length) {
+   		index--;
+        $("#title1").text(trackName[index]);
+        $("#singer1").text(trackSinger[index]);
+        $("#playerDiscCover1").css("background-image", trackCover[index]);
+        $('#play1').css("display", "none");
+        $('#pause1').css("display", "block");
+		player.previousVideo() }
+});
+
+$('#progress-bar1').on('mouseup touchend', function (e) {
 
     // Calculate the new time for the video.
     // new time in seconds = total duration in seconds * ( value of range input / 100 )
@@ -152,8 +173,63 @@ $('#progress-bar').on('mouseup touchend', function (e) {
 
 });
 
-// This function is called by initialize()
-function updateProgressBar(){
-    // Update the value of our progress bar accordingly.
-    $('#progress-bar').val((player.getCurrentTime() / player.getDuration()) * 100);
-}
+// Player 2
+
+$('#play2').on('click', function () { 
+    $('#play2').css("display", "none");
+    $('#pause2').css("display", "block");
+    $('#playerDisc2').css("right", "40px");
+    player2.playVideo(); 
+});
+
+$('#playerCD2').on('click', function () { 
+    $('#play2').css("display", "none");
+    $('#pause2').css("display", "block");
+    $('#playerDisc1').css("right", "210px");
+    $('#playerDisc2').css("right", "40px");
+    $("#title2").text(trackName2[index2]);
+    $("#singer2").text(trackSinger2[index2]);
+    $("#playerDiscCover2").css("background-image", trackCover2[index2]);
+    player.pauseVideo(); 
+    player2.playVideo(); 
+});
+
+$('#pause2').on('click', function () {
+    $('#play2').css("display", "block");
+    $('#pause2').css("display", "none");
+    $('#playerDisc2').css("right", "150px");
+    player2.pauseVideo(); 
+});
+
+$('#next2').on('click', function () {
+    if (index2 >= 0 && index2 < trackName2.length - 1) {
+        index2++;
+        $("#title2").text(trackName2[index2]);
+        $("#singer2").text(trackSinger2[index2]);
+        $("#playerDiscCover2").css("background-image", trackCover2[index2]);
+        $('#play2').css("display", "none");
+        $('#pause2').css("display", "block");
+        player2.nextVideo() }
+});
+
+$('#prev2').on('click', function () { 
+    if (index2 > 0 && index2 < trackName2.length) {
+   		index2--;
+        $("#title2").text(trackName2[index2]);
+        $("#singer2").text(trackSinger2[index2]);
+        $("#playerDiscCover2").css("background-image", trackCover2[index2]);
+        $('#play2').css("display", "none");
+        $('#pause2').css("display", "block");
+		player2.previousVideo() }
+});
+
+$('#progress-bar2').on('mouseup touchend', function (e) {
+
+    // Calculate the new time for the video.
+    // new time in seconds = total duration in seconds * ( value of range input / 100 )
+    var newTime = player2.getDuration() * (e.target.value / 100);
+
+    // Skip video to new time.
+    player2.seekTo(newTime);
+
+});
