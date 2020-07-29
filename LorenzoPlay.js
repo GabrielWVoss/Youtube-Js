@@ -4,14 +4,13 @@ var player2;
 let index = 0;
 let index2 = 0;
 
-const trackName = ["Il ballo delle incertezza", "Guerriero" ];
-const trackSinger = ["Ultimo", "Marco Mengoni"];
+const trackName = ["Il ballo delle incertezza", "Guerriero", "Vivo per lei", "Da grande" ];
+const trackSinger = ["Ultimo", "Marco Mengoni", "Andrea Bocelli", "Benji & Fede"];
 const trackCover = ["url(https://i.imgur.com/3B89bpQ.jpg)",
-                    "url(https://i.imgur.com/A7TrAT2.jpg)" ];
-const trackBack = ["url(https://i.imgur.com/QdyKrC5.gif)",
-                    "url(https://images2.imgbox.com/3f/80/VNOXp8Vi_o.gif)",
-                    "url(https://i.imgur.com/GFzQJpZ.gif)" ];	
-                    
+                    "url(https://i.imgur.com/A7TrAT2.jpg)", 
+                    "url(https://i.imgur.com/A7m0PKl.jpg)",
+                    "url(https://i.imgur.com/Ba1rG8M.jpg)" ];
+
 const trackName2 = ["I Just Can't Wait...", ];
 const trackSinger2 = ["From 'The Lion King'", ];
 const trackCover2 = ["url(https://i.imgur.com/r7MJ81F.jpg)", ];
@@ -23,7 +22,7 @@ function onYouTubeIframeAPIReady() {
         videoId: 'EyZir4O5pu4',
         playerVars: {
             color: 'white',
-			playlist: 'fK8LrzzC4-8',
+			playlist: 'fK8LrzzC4-8,N3WOVnTz-Yo,cpX7EwbIlwg',
 			controls: '0',
         },
         events: {

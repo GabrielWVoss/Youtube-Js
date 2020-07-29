@@ -38,11 +38,6 @@ const trackCover2 = ["url(https://i.imgur.com/zmAR40Y.jpg)",
                     "url(https://64.media.tumblr.com/c1a3de323a967d96e8ca238eaeac2e6c/tumblr_ov3ke6DjdP1v7655qo1_500.gifv)", 
                     "url(https://uploads.spiritfanfiction.com/usuarios/jornal/e-hora-de-dar-tchau-12244618-280220182359.gif)", 
 					"url(https://images.genius.com/093524f55308e0c3a99f8d6f7746a3bf.1000x1000x1.jpg)"];
-const trackBack2 = ["url(https://i.imgur.com/zmAR40Y.jpg)", 
-                    "url(https://i.imgur.com/5BZ7vxg.jpg)", 
-                    "url(https://images.genius.com/f3dc932dcf3a3d218d8e387297bf5afe.1000x1000x1.jpg)", 
-					"url(https://images.genius.com/093524f55308e0c3a99f8d6f7746a3bf.1000x1000x1.jpg)"];		
-
 
 function onYouTubeIframeAPIReady() {
     onload=player = new YT.Player('video', {
