@@ -20,7 +20,7 @@ const trackCover = ["url(https://i.imgur.com/fdHAAkT.jpg)",
                     
 const trackName2 = ["That's What I Like", ];
 const trackSinger2 = ["Bruno Mars", ];
-const trackCover2 = ["url(https://i.imgur.com/zmAR40Y.jpg)", ];
+const trackCover2 = ["url(https://i.imgur.com/Ctp3nTP.png)", ];
 
 function onYouTubeIframeAPIReady() {
     onload=player = new YT.Player('video', {
