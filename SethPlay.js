@@ -6,10 +6,10 @@ let index2 = 0;
 
 const trackName = ["If You Want Love", "Stronger", "Need You Still", "Not Afraid", "Sober", "Trauma",
                     "Toosie Slide", "Stan Spotfy Recorded", "you should see me...", "Can't Lie",
-                    "'Till I Collapse", "Remember the Name", "Different Hos", "Ser Maior" ];
+                    "'Till I Collapse", "Remember the Name", "Different Hos", "Ser Maior", "Only God Can Judge Me" ];
 const trackSinger = ["NF", "Kanye West", "Ivan B feat. Keith Fontano", "Eminem", "G-Eazy feat. Charlie Puth", "NF",
                     "Drake", "Alec Benjamin", "Billie Eilish", "Ali Gatie",
-                    "Eminem", "Fort Minor, Mike Shinoda", "Blackbear", "Katari SC feat. Blaut" ];
+                    "Eminem", "Fort Minor, Mike Shinoda", "Blackbear", "Katari SC feat. Blaut", "2Pac" ];
 const trackCover = ["url(https://i.imgur.com/zmAR40Y.jpg)", 
                     "url(https://i.imgur.com/5BZ7vxg.jpg)", 
                     "url(https://i.imgur.com/bfKgV91.jpg)", 
@@ -23,7 +23,8 @@ const trackCover = ["url(https://i.imgur.com/zmAR40Y.jpg)",
                     "url(https://i.imgur.com/7dbsDvw.jpg)",
                     "url(https://i.imgur.com/tRu0Ufs.png)",
                     "url(https://i.imgur.com/PlX1jLt.jpg)",
-                    "url(https://i.imgur.com/EHmlFWo.jpg)" ];
+                    "url(https://i.imgur.com/EHmlFWo.jpg)",
+                    "url(https://i.imgur.com/Qd8tssG.jpg)" ];
                     
 const trackName2 = ["If You Want", "Stronger", "BMW", "lal"];
 const trackSinger2 = ["NF", "Kanye West", "BMW", "bi"];
@@ -44,7 +45,7 @@ function onYouTubeIframeAPIReady() {
         videoId: 'LfxY1sg5_rw',
         playerVars: {
             color: 'white',
-			playlist: 'PsO6ZnUZI0g,EVzUk-uk_Nc,j5-yKhDd64s,8OARiNiJ_w8,akhttJU-0mc,xXuGq4Xf77g,bELPHxnaAFk,Ah0Ys50CqO8,y7ogiYZDsLI,ytQ5CYE1VZw,VDvr08sCPOc,4hBwH3thlPs,SkK2J9M1e1s',
+			playlist: 'PsO6ZnUZI0g,EVzUk-uk_Nc,j5-yKhDd64s,8OARiNiJ_w8,akhttJU-0mc,xXuGq4Xf77g,bELPHxnaAFk,Ah0Ys50CqO8,y7ogiYZDsLI,ytQ5CYE1VZw,VDvr08sCPOc,4hBwH3thlPs,SkK2J9M1e1s,5gLoEBbZNis',
 			controls: '0',
         },
         events: {

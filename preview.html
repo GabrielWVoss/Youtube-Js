@@ -1,56 +1,115 @@
-<link rel="stylesheet" href="https://files.jcink.net/uploads2/elitefour/Bibs_Templates/youtube1.css" type="text/css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://files.jcink.net/uploads2/elitefour/Bibs_Templates/youtube.css" type="text/css">
 
 <style>
+body {
+    background-color: #F2F2F2;  }
 
-#youtube {
-    --colorPrime: #9B3039;
-    --colorBg: #94444B;
-    --colorRanger: #E6CBCE;
+#playerYoutube {
+    --colorBg: #628A6C;
+    --colorRanger: white;
 
-    --shadow: 0px 2px 17px 0px rgba(0,0,0,0.33);
-    --shadowCur: 0px 2px 17px 0px rgba(0,0,0,0.53);
-    --shadowPlay: 0px 2px 21px 1px rgba(0,0,0,0.22);
+    --coverOne: url(https://i.imgur.com/BL0vrQc.png);
+    --backOne:  url(https://cdn.wallpapersafari.com/18/55/GTrP7S.jpg);
+
+    --coverTwo: url(https://i.imgur.com/aE1QHK4.png);
+    --backTwo: url(https://media3.giphy.com/media/l0K4ljc8kGRWk3Zkc/giphy.gif);
+
+    --shadow: 0px 0px 15px -5px rgba(0,0,0,0.85);
 }
+
+#video, #video2,
+#CDOne:checked ~ .playerAfterDisc,
+#CDTwo:checked ~ .playerAfterDisc
+{ display: none;} 
+
+#CDOne:checked ~ #playerDisc1, #CDTwo:checked ~ #playerDisc2 {
+    right: 50px;
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite; }
+
+#CDOne:checked ~ .playerInfos, #CDTwo:checked ~ .playerInfos {
+    opacity: 1; 
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    right: 250px; }
 
 </style>
 
+
 <body>
-    <div class="container-header"> </div>
-<div id="youtube" class="you-back"> 
-<div id="video-placeholder"></div>
+<div id="playerYoutube" class="playerBack"> 
+
+<div class="playerCD"> 
+<div id="video"></div>
+
+<input type="radio" id="CDOne" name="Player">
+<label for="CDOne" class="playerCDCover" id="playerCD1"> </label>
+<div class="playerDisc" id="playerDisc1"> <div class="playerDiscCover" id="playerDiscCover1"> </div> </div>
+
+<div class="playerAfterDisc"> </div>
+
+<div class="playerInfos"> 
+
+<div class="playerTInfos"> 
+<h3 id="title1"> </h3> 
+<h5 id="singer1"> </h5> 
+
+<input type="range" id="progress-bar1" value="0">
+
+<div class="playerTime"> 
+<div id="current-time1"> </div>
+<div id="duration1"> </div>   
+</div>
+
+<div class="playerControl"> 
+<i id="prev1" class="Pcontrols material-icons">fast_rewind</i>
+<i id="play1" class="Pcontrols material-icons">play_arrow</i>
+<i id="pause1" class="Pcontrols material-icons" style="display: none;">pause </i>   
+<i id="next1" class="Pcontrols material-icons">fast_forward</i>
+</div>
+
+</div> </div>
+</div>
+
+<div class="playerCD"> 
+<div id="video2"></div>
+
+<input type="radio" id="CDTwo" name="Player">
+<label for="CDTwo" class="playerCDCover" id="playerCD2" style="background-image: var(--coverTwo);"> </label>
+<div class="playerDisc" id="playerDisc2"> <div class="playerDiscCover" id="playerDiscCover2"> </div> </div>
 
 
+<div class="playerAfterDisc"> </div>
 
-<div class="holder-cover">
-<div class="cover-prev" id="prev"> </div> 
-<div class="cover-current"> </div> 
-<div class="cover-next" id="next"> </div> 
-</div> 
+<div class="playerInfos" style="background-image: var(--backTwo);"> 
 
-<div class="you-player"> 
-<i id="play" class="material-icons">play_arrow</i>
-<i id="pause" class="material-icons" style="display: none;">pause </i>
+<div class="playerTInfos"> 
+<h3 id="title2">  </h3> 
+<h5 id="singer2"> </h5> 
 
-<div class="you-info" style="line-height: 20%; margin-top: 3px;"> 
-<b class="title"> </b> <br>
-<singer class="singer"> </singer> 
-</div>  
+<input type="range" id="progress-bar2" value="0">
 
-<a href="https://open.spotify.com/playlist/6rbuHvQ8biID0J8Dz2Rz1F?si=hwQsYGBbQny-VGinYG1RFg" target="blanck"> Spotify </a>
+<div class="playerTime"> 
+<div id="current-time2"> </div>
+<div id="duration2"> </div>   
+</div>
 
-<div class="you-bar" style="line-height: 50%;"> 
-<div id="current-time" class="you-time"> </div>
+<div class="playerControl"> 
+<i id="prev2" class="Pcontrols material-icons">fast_rewind</i>
+<i id="play2" class="Pcontrols material-icons">play_arrow</i>
+<i id="pause2" class="Pcontrols material-icons" style="display: none;">pause </i>   
+<i id="next2" class="Pcontrols material-icons">fast_forward</i>
+</div>
 
-<input type="range" id="progress-bar" value="0">
+</div> </div>
+</div>
+</div>
 
-<div id="duration" class="you-time"> </div>
-</div>  
-
-</div></div>
 </body>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://www.youtube.com/iframe_api"></script>
-<script src="LorenzoPlay.js"></script>
+<script src="SethPlay.js"></script>
