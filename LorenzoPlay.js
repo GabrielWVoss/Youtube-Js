@@ -4,15 +4,22 @@ var player2;
 let index = 0;
 let index2 = 0;
 
-const trackName = ["Il ballo delle incertezza", "Guerriero", "Vivo per lei", "Da grande" ];
-const trackSinger = ["Ultimo", "Marco Mengoni", "Andrea Bocelli", "Benji & Fede"];
+const trackName = ["Il ballo delle incertezza", "Guerriero", "Vivo per lei", "Da grande", "Dejavu", "Naufrago",
+                    "Faccio un casino", "Litigare" ];
+const trackSinger = ["Ultimo", "Marco Mengoni", "Andrea Bocelli", "Benji & Fede", "Biondo", "Briga",
+                    "Coez", "Davide Petrella"];
 const trackCover = ["url(https://i.imgur.com/3B89bpQ.jpg)",
                     "url(https://i.imgur.com/A7TrAT2.jpg)", 
                     "url(https://i.imgur.com/A7m0PKl.jpg)",
-                    "url(https://i.imgur.com/Ba1rG8M.jpg)" ];
+                    "url(https://i.imgur.com/Ba1rG8M.jpg)",
+                    "url(https://i.imgur.com/WGVtBYT.jpg)",
+                    "url(https://i.imgur.com/tcYuTlt.jpg)",
+                    "url(https://i.imgur.com/f5iBfLv.jpg)",
+                    "url(https://i.imgur.com/B0UtcgE.jpg)",
+                    "url(https://i.imgur.com/raLthno.jpg)" ];
 
-const trackName2 = ["I Just Can't Wait...", ];
-const trackSinger2 = ["From 'The Lion King'", ];
+const trackName2 = ["I Just Can't Wait...", "The A Team" ];
+const trackSinger2 = ["From 'The Lion King'", "Ed Sheeran" ];
 const trackCover2 = ["url(https://i.imgur.com/r7MJ81F.jpg)", ];
 
 function onYouTubeIframeAPIReady() {
@@ -22,7 +29,7 @@ function onYouTubeIframeAPIReady() {
         videoId: 'EyZir4O5pu4',
         playerVars: {
             color: 'white',
-			playlist: 'fK8LrzzC4-8,N3WOVnTz-Yo,cpX7EwbIlwg',
+			playlist: 'fK8LrzzC4-8,N3WOVnTz-Yo,cpX7EwbIlwg,a1K7D4RpaDs,lBLRFmC5CqM,H6qqA0SOkIs',
 			controls: '0',
         },
         events: {
@@ -37,7 +44,7 @@ function onYouTubeIframeAPIReady() {
         videoId: 'ysb_gxJ8LE4',
         playerVars: {
             color: 'white',
-			playlist: 'PsO6ZnUZI0g,0yW7w8F2TVA',
+			playlist: 'UAWcs5H-qgQ',
 			controls: '0',
         },
         events: {
