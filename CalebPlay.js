@@ -5,9 +5,11 @@ let index = 0;
 let index2 = 0;
 
 const trackName = ["I Want It That Way", "Welcome to My Life", "Não Sei Viver...", "Who Let The Dogs Out",
-                    "Good Girls", "Hotel California", "Put Your Records On", "Barbie Girl", "Sk8er Boi" ];
+                    "Good Girls", "Hotel California", "Put Your Records On", "Barbie Girl", "Sk8er Boi",
+                    "Show Me the Meaning..." ];
 const trackSinger = ["Backstreet Boys", "Simple Plan", "CPM 22", "Baha Men",
-                    "5 Seconds of Summer", "Eagles", "Corinne Bailey Rae", "Aqua", "Avril Lavigne"];
+                    "5 Seconds of Summer", "Eagles", "Corinne Bailey Rae", "Aqua", "Avril Lavigne",
+                    "Backstreet Boys"];
 const trackCover = ["url(https://i.imgur.com/fdHAAkT.jpg)",
                     "url(https://i.imgur.com/NbkpB8f.jpg)",
                     "url(https://i.imgur.com/fIxnyc1.jpg)",
@@ -16,7 +18,8 @@ const trackCover = ["url(https://i.imgur.com/fdHAAkT.jpg)",
                     "url(https://i.imgur.com/9Quliag.jpg)",
                     "url(https://i.imgur.com/4fzE91e.jpg)",
                     "url(https://i.imgur.com/S2akGLv.jpg)",
-                    "url(https://i.imgur.com/yBZpI3i.png)" ];
+                    "url(https://i.imgur.com/yBZpI3i.png)",
+                    "url(https://i.imgur.com/IEC5KvP.jpg)" ];
                     
 const trackName2 = ["That's What I Like", ];
 const trackSinger2 = ["Bruno Mars", ];
@@ -29,7 +32,7 @@ function onYouTubeIframeAPIReady() {
         videoId: '4fndeDfaWCg',
         playerVars: {
             color: 'white',
-			playlist: 'r0U0AlLVqpk,DKqSeHVb8rw,Qkuu0Lwb5EM,292XUJ5jH7U,EqPtz5qN7HM,rjOhZZyn30k,IvAPUKhBumU',
+			playlist: 'r0U0AlLVqpk,DKqSeHVb8rw,Qkuu0Lwb5EM,292XUJ5jH7U,EqPtz5qN7HM,rjOhZZyn30k,IvAPUKhBumU,U2H0oaGIjVg',
 			controls: '0',
         },
         events: {
