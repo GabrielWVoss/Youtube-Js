@@ -15,12 +15,12 @@ const trackCover = ["url(https://i.imgur.com/3B89bpQ.jpg)",
                     "url(https://i.imgur.com/WGVtBYT.jpg)",
                     "url(https://i.imgur.com/tcYuTlt.jpg)",
                     "url(https://i.imgur.com/f5iBfLv.jpg)",
-                    "url(https://i.imgur.com/B0UtcgE.jpg)",
-                    "url(https://i.imgur.com/raLthno.jpg)" ];
+                    "url(https://i.imgur.com/B0UtcgE.jpg)", ];
 
 const trackName2 = ["I Just Can't Wait...", "The A Team" ];
 const trackSinger2 = ["From 'The Lion King'", "Ed Sheeran" ];
-const trackCover2 = ["url(https://i.imgur.com/r7MJ81F.jpg)", ];
+const trackCover2 = ["url(https://i.imgur.com/r7MJ81F.jpg)",
+                        "url(https://i.imgur.com/raLthno.jpg)" ];
 
 function onYouTubeIframeAPIReady() {
     onload=player = new YT.Player('video', {
