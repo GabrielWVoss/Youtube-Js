@@ -152,7 +152,8 @@ $('#next1').on('click', function () {
         $("#singer1").text(trackSinger[index]);
         $("#playerDiscCover1").css("background-image", trackCover[index]);
         $('#play1').css("display", "none");
-        $('#pause1').css("display", "block");
+		$('#pause1').css("display", "block");
+		$('#playerDisc1').css("right", "40px");
         player.nextVideo() }
 });
 
@@ -163,7 +164,8 @@ $('#prev1').on('click', function () {
         $("#singer1").text(trackSinger[index]);
         $("#playerDiscCover1").css("background-image", trackCover[index]);
         $('#play1').css("display", "none");
-        $('#pause1').css("display", "block");
+		$('#pause1').css("display", "block");
+		$('#playerDisc1').css("right", "40px");
 		player.previousVideo() }
 });
 
@@ -213,7 +215,8 @@ $('#next2').on('click', function () {
         $("#singer2").text(trackSinger2[index2]);
         $("#playerDiscCover2").css("background-image", trackCover2[index2]);
         $('#play2').css("display", "none");
-        $('#pause2').css("display", "block");
+		$('#pause2').css("display", "block");
+		$('#playerDisc2').css("right", "40px");
         player2.nextVideo() }
 });
 
@@ -224,7 +227,8 @@ $('#prev2').on('click', function () {
         $("#singer2").text(trackSinger2[index2]);
         $("#playerDiscCover2").css("background-image", trackCover2[index2]);
         $('#play2').css("display", "none");
-        $('#pause2').css("display", "block");
+		$('#pause2').css("display", "block");
+		$('#playerDisc2').css("right", "40px");
 		player2.previousVideo() }
 });
 
