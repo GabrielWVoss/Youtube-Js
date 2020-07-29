@@ -4,19 +4,19 @@ var player2;
 let index = 0;
 let index2 = 0;
 
-const trackName = ["I Want It That Way", "Welcome to My Life", "Não Sei Viver...",
-                    "Who Let The Dogs Out", "Good Girls",
-                    "Hotel California", "Put Your Records On" ];
-const trackSinger = ["Backstreet Boys", "Simple Plan", "CPM 22",
-                    "Baha Men", "5 Seconds of Summer",
-                    "Eagles", "Corinne Bailey Rae"];
+const trackName = ["I Want It That Way", "Welcome to My Life", "Não Sei Viver...", "Who Let The Dogs Out",
+                    "Good Girls", "Hotel California", "Put Your Records On", "Barbie Girl", "Sk8er Boi" ];
+const trackSinger = ["Backstreet Boys", "Simple Plan", "CPM 22", "Baha Men",
+                    "5 Seconds of Summer", "Eagles", "Corinne Bailey Rae", "Aqua", "Avril Lavigne"];
 const trackCover = ["url(https://i.imgur.com/fdHAAkT.jpg)",
                     "url(https://i.imgur.com/NbkpB8f.jpg)",
                     "url(https://i.imgur.com/fIxnyc1.jpg)",
                     "url(https://i.imgur.com/CNXJri9.jpg)",
                     "url(https://i.imgur.com/MpzkuRb.jpg)",
                     "url(https://i.imgur.com/9Quliag.jpg)",
-                    "url(https://i.imgur.com/4fzE91e.jpg)" ];
+                    "url(https://i.imgur.com/4fzE91e.jpg)",
+                    "url(https://i.imgur.com/S2akGLv.jpg)",
+                    "url(https://i.imgur.com/yBZpI3i.png)" ];
                     
 const trackName2 = ["That's What I Like", ];
 const trackSinger2 = ["Bruno Mars", ];
@@ -26,10 +26,10 @@ function onYouTubeIframeAPIReady() {
     onload=player = new YT.Player('video', {
         width: 600,
         height: 400,
-        videoId: 'LfxY1sg5_rw',
+        videoId: '4fndeDfaWCg',
         playerVars: {
             color: 'white',
-			playlist: 'PsO6ZnUZI0g,EVzUk-uk_Nc,akhttJU-0mc,xXuGq4Xf77g,y7ogiYZDsLI,ytQ5CYE1VZw,VDvr08sCPOc,4hBwH3thlPs,SkK2J9M1e1s,5gLoEBbZNis,854WQhuSISc,5qm8PH4xAss,bKDdT_nyP54',
+			playlist: 'r0U0AlLVqpk,DKqSeHVb8rw,Qkuu0Lwb5EM,292XUJ5jH7U,EqPtz5qN7HM,rjOhZZyn30k,IvAPUKhBumU',
 			controls: '0',
         },
         events: {
@@ -41,7 +41,7 @@ function onYouTubeIframeAPIReady() {
     onload=player2 = new YT.Player('video2', {
         width: 600,
         height: 400,
-        videoId: 'j5-yKhDd64s',
+        videoId: 'PMivT7MJ41M',
         playerVars: {
             color: 'white',
 			playlist: 'PsO6ZnUZI0g,0yW7w8F2TVA',
