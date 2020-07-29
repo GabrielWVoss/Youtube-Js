@@ -5,9 +5,11 @@ let index = 0;
 let index2 = 0;
 
 const trackName = ["Il ballo delle incertezza", "Guerriero", "Vivo per lei", "Da grande", "Dejavu", "Naufrago",
-                    "Faccio un casino", "Litigare" ];
+					"Faccio un casino", "Litigare", "Salutalo da parte mia", "Per La Strade Una...",
+					"Ti Avrei Voluto Dire" ];
 const trackSinger = ["Ultimo", "Marco Mengoni", "Andrea Bocelli", "Benji & Fede", "Biondo", "Briga",
-                    "Coez", "Davide Petrella"];
+					"Coez", "Davide Petrella", "Einar", "Eros Ramazzotti feat. Luis Fonsi",
+					"Federica Carta"];
 const trackCover = ["url(https://i.imgur.com/3B89bpQ.jpg)",
                     "url(https://i.imgur.com/A7TrAT2.jpg)", 
                     "url(https://i.imgur.com/A7m0PKl.jpg)",
@@ -15,7 +17,10 @@ const trackCover = ["url(https://i.imgur.com/3B89bpQ.jpg)",
                     "url(https://i.imgur.com/WGVtBYT.jpg)",
                     "url(https://i.imgur.com/tcYuTlt.jpg)",
                     "url(https://i.imgur.com/f5iBfLv.jpg)",
-                    "url(https://i.imgur.com/B0UtcgE.jpg)", ];
+					"url(https://i.imgur.com/B0UtcgE.jpg)",
+					"url(https://i.imgur.com/PD9uxOa.jpg)",
+					"url(https://i.imgur.com/Z2kzfLt.jpg)",
+					"url(https://i.imgur.com/puHL2f8.jpg)" ];
 
 const trackName2 = ["I Just Can't Wait...", "The A Team" ];
 const trackSinger2 = ["From 'The Lion King'", "Ed Sheeran" ];
@@ -29,7 +34,7 @@ function onYouTubeIframeAPIReady() {
         videoId: 'EyZir4O5pu4',
         playerVars: {
             color: 'white',
-			playlist: 'fK8LrzzC4-8,N3WOVnTz-Yo,cpX7EwbIlwg,a1K7D4RpaDs,lBLRFmC5CqM,H6qqA0SOkIs',
+			playlist: 'fK8LrzzC4-8,N3WOVnTz-Yo,cpX7EwbIlwg,a1K7D4RpaDs,lBLRFmC5CqM,H6qqA0SOkIs,1uIWjaloYkg,mYc9jSdhwMw,HdFE2jSVxfc',
 			controls: '0',
         },
         events: {
