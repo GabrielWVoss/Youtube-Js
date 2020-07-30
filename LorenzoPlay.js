@@ -6,10 +6,11 @@ let index2 = 0;
 
 const trackName = ["Il ballo delle incertezza", "Guerriero", "Vivo per lei", "Da grande", "Dejavu", "Naufrago",
 					"Faccio un casino", "Litigare", "Salutalo da parte mia", "Per La Strade Una...",
-					"Ti Avrei Voluto Dire" ];
+					"Ti Avrei Voluto Dire", "Prima di ogni cosa", "Disastro", "Dopo di noi nemmeno...",
+					"Voglio solo te" ];
 const trackSinger = ["Ultimo", "Marco Mengoni", "Andrea Bocelli", "Benji & Fede", "Biondo", "Briga",
 					"Coez", "Davide Petrella", "Einar", "Eros Ramazzotti feat. Luis Fonsi",
-					"Federica Carta"];
+					"Federica Carta", "Fedez", "GionnyScandal", "Briga", "Irama"];
 const trackCover = ["url(https://i.imgur.com/3B89bpQ.jpg)",
                     "url(https://i.imgur.com/A7TrAT2.jpg)", 
                     "url(https://i.imgur.com/A7m0PKl.jpg)",
@@ -20,12 +21,24 @@ const trackCover = ["url(https://i.imgur.com/3B89bpQ.jpg)",
 					"url(https://i.imgur.com/B0UtcgE.jpg)",
 					"url(https://i.imgur.com/PD9uxOa.jpg)",
 					"url(https://i.imgur.com/Z2kzfLt.jpg)",
-					"url(https://i.imgur.com/puHL2f8.jpg)" ];
+					"url(https://i.imgur.com/puHL2f8.jpg)",
+					"url(https://i.imgur.com/dyBzKyz.png)",
+					"url(https://i.imgur.com/OYFpieD.jpg)",
+					"url(https://i.imgur.com/AwFti3p.jpg)",
+					"url(https://i.imgur.com/rfNDOnf.jpg)" ];
 
-const trackName2 = ["I Just Can't Wait...", "The A Team" ];
-const trackSinger2 = ["From 'The Lion King'", "Ed Sheeran" ];
+const trackName2 = ["I Just Can't Wait...", "The A Team", "Superman (It's Not Easy)", "Hakuna Matata",
+					"Can I Be Him", "Free Fallin'", "Love Yourself", "Lego House" ];
+const trackSinger2 = ["From 'The Lion King'", "Ed Sheeran", "Five for Fighting", "From 'The Lion King'",
+						"James Arthur", "John Mayer", "Justin Bieber", "Ed Sheeran" ];
 const trackCover2 = ["url(https://i.imgur.com/r7MJ81F.jpg)",
-                        "url(https://i.imgur.com/raLthno.jpg)" ];
+						"url(https://i.imgur.com/raLthno.jpg)",
+						"url(https://i.imgur.com/oorJ4Wu.jpg)",
+						"url(https://i.imgur.com/r7MJ81F.jpg)",
+						"url(https://i.imgur.com/qAwR4Mz.jpg)",
+						"url(https://i.imgur.com/TMTUNDZ.jpg)",
+						"url(https://i.imgur.com/yeRyySp.png)",
+						"url(https://i.imgur.com/r7LOAUT.jpg)" ];
 
 function onYouTubeIframeAPIReady() {
     onload=player = new YT.Player('video', {
@@ -34,7 +47,7 @@ function onYouTubeIframeAPIReady() {
         videoId: 'EyZir4O5pu4',
         playerVars: {
             color: 'white',
-			playlist: 'fK8LrzzC4-8,N3WOVnTz-Yo,cpX7EwbIlwg,a1K7D4RpaDs,lBLRFmC5CqM,H6qqA0SOkIs,1uIWjaloYkg,mYc9jSdhwMw,HdFE2jSVxfc',
+			playlist: 'fK8LrzzC4-8,N3WOVnTz-Yo,cpX7EwbIlwg,a1K7D4RpaDs,lBLRFmC5CqM,H6qqA0SOkIs,1uIWjaloYkg,mYc9jSdhwMw,HdFE2jSVxfc,o4ltA8aQdpE,2qz3wVaE4sk,atDBhNfnDaE,WejfHZdzi1I',
 			controls: '0',
         },
         events: {
@@ -49,7 +62,7 @@ function onYouTubeIframeAPIReady() {
         videoId: 'ysb_gxJ8LE4',
         playerVars: {
             color: 'white',
-			playlist: 'UAWcs5H-qgQ',
+			playlist: 'UAWcs5H-qgQ,GRz4FY0ZcwI,_YzVcRVJGmQ,mcXv4w-cm3U,20Ov0cDPZy8,TMSIR210mRg,UMXTZR4Z5LQ',
 			controls: '0',
         },
         events: {
