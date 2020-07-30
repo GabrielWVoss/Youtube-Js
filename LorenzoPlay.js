@@ -112,7 +112,7 @@ function onPlayerStateChange(event) {
         index++;
         $("h3").text(trackName[index]);
         $("h5").text(trackSinger[index]);
-        $("#playerDiscCover1").css("background-image", trackCover[index]);
+        $(".playerDiscCover").css("background-image", trackCover[index]);
     }
     else if (event.data == YT.Player2State.ENDED && index >= 0 && index < trackName.length - 1) {
         index2++;
