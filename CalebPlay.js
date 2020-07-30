@@ -10,10 +10,12 @@ let index4 = 0;
 
 const trackName = ["I Want It That Way", "Welcome to My Life", "Não Sei Viver...", "Who Let The Dogs Out",
                     "Good Girls", "Hotel California", "Put Your Records On", "Barbie Girl", "Sk8er Boi",
-                    "Show Me the Meaning...", "Irreplaceable", "Where Is The Love?", "I Miss You", "Monster Mash" ];
+                    "Show Me the Meaning...", "Irreplaceable", "Where Is The Love?", "I Miss You", "Monster Mash",
+                    "Toxic", "Genie In a Bottle" ];
 const trackSinger = ["Backstreet Boys", "Simple Plan", "CPM 22", "Baha Men",
                     "5 Seconds of Summer", "Eagles", "Corinne Bailey Rae", "Aqua", "Avril Lavigne",
-                    "Backstreet Boys", "Beyoncé", "Black Eyed Peas", "Blink-182", "Bobby 'Boris' Pickett"];
+                    "Backstreet Boys", "Beyoncé", "Black Eyed Peas", "Blink-182", "Bobby 'Boris' Pickett",
+                    "Britney Spears", "Christina Aguilera"];
 const trackCover = ["url(https://i.imgur.com/fdHAAkT.jpg)",
                     "url(https://i.imgur.com/NbkpB8f.jpg)",
                     "url(https://i.imgur.com/fIxnyc1.jpg)",
@@ -27,12 +29,19 @@ const trackCover = ["url(https://i.imgur.com/fdHAAkT.jpg)",
                     "url(https://i.imgur.com/A41XBRl.jpg)",
                     "url(https://i.imgur.com/Pt1XhQG.jpg)",
                     "url(https://i.imgur.com/aKnymUb.jpg)",
-                    "url(https://i.imgur.com/wWEJoIz.jpg)" ];
+                    "url(https://i.imgur.com/wWEJoIz.jpg)",
+                    "url(https://i.imgur.com/TetHEZV.jpg)",
+                    "url(https://i.imgur.com/lEPQMFT.jpg)",
+                    "url(https://i.imgur.com/4vQgyie.jpg)" ];
                     
-const trackName2 = ["That's What I Like", "Run the World (Girls)"];
-const trackSinger2 = ["Bruno Mars", "Beyoncé" ];
+const trackName2 = ["That's What I Like", "Run the World (Girls)", "Hold It Against Me", "3005",
+                    "Rockabye"];
+const trackSinger2 = ["Bruno Mars", "Beyoncé", "Britney Spears", "Childish Gambino",
+                    "Clean Bandit feat. Sean Paul..." ];
 const trackCover2 = ["url(https://i.imgur.com/Ctp3nTP.png)",
-                    "url(https://i.imgur.com/gAcX9sN.jpg)" ];
+                    "url(https://i.imgur.com/gAcX9sN.jpg)",
+                    "url(https://i.imgur.com/HkD6fIY.jpg)",
+                    "url(https://i.imgur.com/OrIxvQa.jpg)" ];
 
 const trackName3 = ["I Just Can't Wait...", "The A Team" ];
 const trackSinger3 = ["From 'The Lion King'", "Marshmello" ];
@@ -51,7 +60,7 @@ function onYouTubeIframeAPIReady() {
         videoId: '4fndeDfaWCg',
         playerVars: {
             color: 'white',
-			playlist: 'r0U0AlLVqpk,DKqSeHVb8rw,Qkuu0Lwb5EM,292XUJ5jH7U,EqPtz5qN7HM,rjOhZZyn30k,ZyhrYis509A,IvAPUKhBumU,U2H0oaGIjVg,foaLW5DGhpI,WpYeekQkAdc,s1tAYmMjLdY,FOQJPhrgFxI',
+			playlist: 'r0U0AlLVqpk,DKqSeHVb8rw,Qkuu0Lwb5EM,292XUJ5jH7U,EqPtz5qN7HM,rjOhZZyn30k,ZyhrYis509A,IvAPUKhBumU,U2H0oaGIjVg,foaLW5DGhpI,WpYeekQkAdc,s1tAYmMjLdY,FOQJPhrgFxI,LOZuxwVk7TU,kIDWgqDBNXA,papuvlVeZg8',
 			controls: '0',
         },
         events: {
@@ -66,7 +75,7 @@ function onYouTubeIframeAPIReady() {
         videoId: 'PMivT7MJ41M',
         playerVars: {
             color: 'white',
-			playlist: 'N8t078YDojM,0yW7w8F2TVA',
+			playlist: 'N8t078YDojM,GJSm_QMO6zA,tG35R8F2j8k',
 			controls: '0',
         },
         events: {
