@@ -371,7 +371,7 @@ $('#pause3').on('click', function () {
 });
 
 $('#next3').on('click', function () {
-    if (index3 >= 0 && index < trackName3.length - 1) {
+    if (index3 >= 0 && index3 < trackName3.length - 1) {
         index3++;
         $("#title3").text(trackName3[index3]);
         $("#singer3").text(trackSinger3[index3]);
@@ -457,7 +457,7 @@ $('#next4').on('click', function () {
 });
 
 $('#prev4').on('click', function () { 
-    if (index4 > 0 && index < trackName4.length) {
+    if (index4 > 0 && index4 < trackName4.length) {
    		index4--;
         $("#title4").text(trackName4[index4]);
         $("#singer4").text(trackSinger4[index4]);
