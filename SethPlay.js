@@ -66,7 +66,7 @@ function onYouTubeIframeAPIReady() {
         },
         events: {
             'onReady': initialize,
-            'onStateChange': onPlayerStateChange
+            'onStateChange': onPlayerStateChange2
         }
     });
 }
@@ -89,17 +89,21 @@ function initialize(){
 }
 
 function onPlayerStateChange(event) {
-    if (event.data == YT.PlayerState.ENDED && index >= 0 && index < trackName.length - 1) {
-        index++;
-        $("h3").text(trackName[index]);
-        $("h5").text(trackSinger[index]);
-        $("#playerDiscCover1").css("background-image", trackCover[index]);
-    }
-    else if (event.data == YT.Player2State.ENDED && index >= 0 && index < trackName.length - 1) {
-        index2++;
-        $("h3").text(trackName[index]);
-        $("h5").text(trackSinger[index]);
-        $(".playerDiscCover").css("background-image", trackCover[index]); }
+	if (index >= 0 && index < trackName.length - 1 && event.data == YT.PlayerState.ENDED) {
+		index++;
+		$("#title1").text(trackName[index]);
+		$("#singer1").text(trackSinger[index]);
+		$("#playerDiscCover1").css("background-image", trackCover[index]);
+	}
+}
+
+function onPlayerStateChange2(event) {
+	if (index >= 0 && index < trackName.length - 1 && event.data == YT.PlayerState.ENDED) {
+    	index2++;
+        $("#title2").text(trackName2[index2]);
+		$("#singer2").text(trackSinger2[index2]);
+		$("#playerDiscCover2").css("background-image", trackCover2[index2]);
+	}
 }
 
 // This function is called by initialize()

@@ -80,12 +80,12 @@ function onYouTubeIframeAPIReady() {
         videoId: 'ysb_gxJ8LE4',
         playerVars: {
             color: 'white',
-			playlist: 'UAWcs5H-qgQ,GRz4FY0ZcwI,_YzVcRVJGmQ,mcXv4w-cm3U,20Ov0cDPZy8,TMSIR210mRg,UMXTZR4Z5LQ,qvXXMsiQBDg,Q0bnAmfGQC8,pUVxaYdgS_Q,XJT7I0sLdD0,JxzKNHfNRdI,A_af256mnTE,EUnfV73qN0w,5oX_gwwACls,e2vBLd5Egnk',
+			playlist: 'EyZir4O5pu4,UAWcs5H-qgQ,GRz4FY0ZcwI,_YzVcRVJGmQ,mcXv4w-cm3U,20Ov0cDPZy8,TMSIR210mRg,UMXTZR4Z5LQ,qvXXMsiQBDg,Q0bnAmfGQC8,pUVxaYdgS_Q,XJT7I0sLdD0,JxzKNHfNRdI,A_af256mnTE,EUnfV73qN0w,5oX_gwwACls,e2vBLd5Egnk',
 			controls: '0',
         },
         events: {
             'onReady': initialize,
-            'onStateChange': onPlayerStateChange
+            'onStateChange': onPlayerStateChange2
         }
     });
 }
@@ -108,17 +108,21 @@ function initialize(){
 }
 
 function onPlayerStateChange(event) {
-    if (event.data == YT.PlayerState.ENDED && index >= 0 && index < trackName.length - 1) {
-        index++;
-        $("h3").text(trackName[index]);
-        $("h5").text(trackSinger[index]);
-        $("#playerDiscCover1").css("background-image", trackCover[index]);
-    }
-    else if (event.data == YT.Player2State.ENDED && index >= 0 && index < trackName.length - 1) {
-        index2++;
-        $("h3").text(trackName[index]);
-        $("h5").text(trackSinger[index]);
-        $("#playerDiscCover2").css("background-image", trackCover[index]); }
+	if (index >= 0 && index < trackName.length - 1 && event.data == YT.PlayerState.ENDED) {
+		index++;
+		$("#title1").text(trackName[index]);
+		$("#singer1").text(trackSinger[index]);
+		$("#playerDiscCover1").css("background-image", trackCover[index]);
+	}
+}
+
+function onPlayerStateChange2(event) {
+	if (index >= 0 && index < trackName.length - 1 && event.data == YT.PlayerState.ENDED) {
+    	index2++;
+        $("#title2").text(trackName2[index2]);
+		$("#singer2").text(trackSinger2[index2]);
+		$("#playerDiscCover2").css("background-image", trackCover2[index2]);
+	}
 }
 
 // This function is called by initialize()
