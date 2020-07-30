@@ -31,8 +31,7 @@ const trackCover = ["url(https://i.imgur.com/fdHAAkT.jpg)",
                     "url(https://i.imgur.com/aKnymUb.jpg)",
                     "url(https://i.imgur.com/wWEJoIz.jpg)",
                     "url(https://i.imgur.com/TetHEZV.jpg)",
-                    "url(https://i.imgur.com/lEPQMFT.jpg)",
-                    "url(https://i.imgur.com/4vQgyie.jpg)" ];
+                    "url(https://i.imgur.com/lEPQMFT.jpg)" ];
                     
 const trackName2 = ["That's What I Like", "Run the World (Girls)", "Hold It Against Me", "3005",
                     "Rockabye"];
@@ -41,7 +40,8 @@ const trackSinger2 = ["Bruno Mars", "Beyoncé", "Britney Spears", "Childish Gamb
 const trackCover2 = ["url(https://i.imgur.com/Ctp3nTP.png)",
                     "url(https://i.imgur.com/gAcX9sN.jpg)",
                     "url(https://i.imgur.com/HkD6fIY.jpg)",
-                    "url(https://i.imgur.com/OrIxvQa.jpg)" ];
+                    "url(https://i.imgur.com/OrIxvQa.jpg)",
+                    "url(https://i.imgur.com/4vQgyie.jpg)" ];
 
 const trackName3 = ["I Just Can't Wait...", "The A Team" ];
 const trackSinger3 = ["From 'The Lion King'", "Marshmello" ];
@@ -60,7 +60,7 @@ function onYouTubeIframeAPIReady() {
         videoId: '4fndeDfaWCg',
         playerVars: {
             color: 'white',
-			playlist: 'r0U0AlLVqpk,DKqSeHVb8rw,Qkuu0Lwb5EM,292XUJ5jH7U,EqPtz5qN7HM,rjOhZZyn30k,ZyhrYis509A,IvAPUKhBumU,U2H0oaGIjVg,foaLW5DGhpI,WpYeekQkAdc,s1tAYmMjLdY,FOQJPhrgFxI,LOZuxwVk7TU,kIDWgqDBNXA,papuvlVeZg8',
+			playlist: 'r0U0AlLVqpk,DKqSeHVb8rw,Qkuu0Lwb5EM,292XUJ5jH7U,EqPtz5qN7HM,rjOhZZyn30k,ZyhrYis509A,IvAPUKhBumU,U2H0oaGIjVg,foaLW5DGhpI,WpYeekQkAdc,s1tAYmMjLdY,FOQJPhrgFxI,LOZuxwVk7TU,kIDWgqDBNXA',
 			controls: '0',
         },
         events: {
@@ -75,7 +75,7 @@ function onYouTubeIframeAPIReady() {
         videoId: 'PMivT7MJ41M',
         playerVars: {
             color: 'white',
-			playlist: 'N8t078YDojM,GJSm_QMO6zA,tG35R8F2j8k',
+			playlist: 'N8t078YDojM,GJSm_QMO6zA,tG35R8F2j8k,papuvlVeZg8',
 			controls: '0',
         },
         events: {
