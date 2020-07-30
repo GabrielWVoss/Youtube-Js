@@ -161,8 +161,8 @@ function updateProgressBar(){
     // Update the value of our progress bar accordingly.
 	$('#progress-bar1').val((player.getCurrentTime() / player.getDuration()) * 100);
 	$('#progress-bar2').val((player2.getCurrentTime() / player2.getDuration()) * 100);
-	$('#progress-bar3').val((player.getCurrentTime() / player3.getDuration()) * 100);
-    $('#progress-bar4').val((player2.getCurrentTime() / player4.getDuration()) * 100);
+	$('#progress-bar3').val((player3.getCurrentTime() / player3.getDuration()) * 100);
+    $('#progress-bar4').val((player4.getCurrentTime() / player4.getDuration()) * 100);
 }
 
 // Player 1
@@ -188,6 +188,8 @@ $('#playerCD1').on('click', function () {
     $("#playerDiscCover1").css("background-image", trackCover[index]);
     player.playVideo(); 
     player2.pauseVideo(); 
+    player3.pauseVideo(); 
+    player4.pauseVideo(); 
 });
 
 $('#play1').on('click', function () { 
@@ -268,7 +270,9 @@ $('#playerCD2').on('click', function () {
     $("#singer2").text(trackSinger2[index2]);
     $("#playerDiscCover2").css("background-image", trackCover2[index2]);
     player.pauseVideo(); 
-    player2.playVideo(); 
+    player2.playVideo();
+    player3.pauseVideo(); 
+    player4.pauseVideo(); 
 });
 
 $('#pause2').on('click', function () {
@@ -334,6 +338,8 @@ $('#playerCD3').on('click', function () {
     $("#title3").text(trackName3[index3]);
     $("#singer3").text(trackSinger3[index3]);
     $("#playerDiscCover3").css("background-image", trackCover3[index3]);
+    player.pauseVideo(); 
+    player2.pauseVideo(); 
     player3.playVideo(); 
     player4.pauseVideo(); 
 });
@@ -408,6 +414,8 @@ $('#playerCD4').on('click', function () {
     $("#title4").text(trackName4[index4]);
     $("#singer4").text(trackSinger4[index4]);
     $("#playerDiscCover4").css("background-image", trackCover4[index4]);
+    player.pauseVideo(); 
+    player2.pauseVideo(); 
     player4.playVideo(); 
     player3.pauseVideo(); 
 });
@@ -457,5 +465,5 @@ $('#progress-bar4').on('mouseup touchend', function (e) {
     var newTime = player4.getDuration() * (e.target.value / 100);
 
     // Skip video to new time.
-    player3.seekTo(newTime);
+    player4.seekTo(newTime);
 });
