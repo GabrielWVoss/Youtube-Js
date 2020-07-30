@@ -83,7 +83,8 @@ function onYouTubeIframeAPIReady() {
             'onReady': initialize,
             'onStateChange': onPlayerStateChange3
         }
-	});
+    });
+    
 	onload=player4 = new YT.Player('video4', {
         width: 600,
         height: 400,
@@ -443,5 +444,4 @@ $('#progress-bar4').on('mouseup touchend', function (e) {
 
     // Skip video to new time.
     player3.seekTo(newTime);
-
 });
