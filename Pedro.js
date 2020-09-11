@@ -15,6 +15,9 @@ const trackName = [
   "Charles",
   "Creep",
   "Charlie Boy",
+  "Harmony Hall",
+  "Breezeblocks",
+  
 ];
 const trackSinger = [
   "Gary Jules feat. Michael Andrews",
@@ -23,6 +26,8 @@ const trackSinger = [
   "Martin Phipps",
   "Radiohead",
   "The Lumineers",
+  "Vampire Weekend",
+  "Alt J"
 ];
 const trackCover = [
   "url(https://i.imgur.com/Iu5SKTm.jpg)",
@@ -31,6 +36,8 @@ const trackCover = [
   "url(https://i.imgur.com/Egx0vrX.jpg)",
   "url(https://i.imgur.com/ovDVWwc.jpg)",
   "url(https://i.imgur.com/IJlIyIo.jpg)",
+  "url(https://i.imgur.com/TgeGX3P.jpg)",
+  "url(https://i.imgur.com/4x4clH0.jpg)"
 ];
 
 const trackName2 = ["That's What I Like"];
@@ -51,7 +58,7 @@ function onYouTubeIframeAPIReady() {
     height: 400,
     videoId: "Oa-ae6_okmg",
     playerVars: {
-      playlist: "NQGiN838G8M,_KBi_qw6prw,psaccd8u24I,XFkzRNyygfk,Uf7lQg1_vBM",
+      playlist: "NQGiN838G8M,_KBi_qw6prw,psaccd8u24I,XFkzRNyygfk,Uf7lQg1_vBM,IlkTVMMkCP4,rVeMiVU77wo",
     },
     events: {
       onReady: initialize,
