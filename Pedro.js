@@ -48,6 +48,7 @@ function onYouTubeIframeAPIReady() {
     },
   });
 
+  /*
   onload = player2 = new YT.Player("video2", {
     width: 600,
     height: 400,
@@ -92,17 +93,13 @@ function onYouTubeIframeAPIReady() {
       onStateChange: onPlayerStateChange4,
     },
   });
-}
+} */
 
 // All Players
 
 function initialize() {
   // Update the controls on load
-  console.log("Here");
-
   updateTimerDisplay();
-  console.log("Here2");
-
   updateProgressBar();
 
   // Start interval to update elapsed time display and
@@ -115,8 +112,6 @@ function initialize() {
 
 // This function is called by initialize()
 function updateTimerDisplay() {
-  console.log("Here2");
-
   // Update current time text display.
   $("#current-time1").text(formatTime(player.getCurrentTime()));
   $("#duration1").text(formatTime(player.getDuration()));
