@@ -48,8 +48,7 @@ function onYouTubeIframeAPIReady() {
     },
   });
 
-  /*
-  onload = player2 = new YT.Player("video2", {
+  /* onload = player2 = new YT.Player("video2", {
     width: 600,
     height: 400,
     videoId: "PMivT7MJ41M",
@@ -92,8 +91,8 @@ function onYouTubeIframeAPIReady() {
       onReady: initialize,
       onStateChange: onPlayerStateChange4,
     },
-  });
-} */
+  }); */
+}
 
 // All Players
 
@@ -115,12 +114,12 @@ function updateTimerDisplay() {
   // Update current time text display.
   $("#current-time1").text(formatTime(player.getCurrentTime()));
   $("#duration1").text(formatTime(player.getDuration()));
- // $("#current-time2").text(formatTime(player2.getCurrentTime()));
- // $("#duration2").text(formatTime(player2.getDuration()));
- // $("#current-time3").text(formatTime(player3.getCurrentTime()));
- // $("#duration3").text(formatTime(player3.getDuration()));
- // $("#current-time4").text(formatTime(player4.getCurrentTime()));
- // $("#duration4").text(formatTime(player4.getDuration()));
+  // $("#current-time2").text(formatTime(player2.getCurrentTime()));
+  // $("#duration2").text(formatTime(player2.getDuration()));
+  // $("#current-time3").text(formatTime(player3.getCurrentTime()));
+  // $("#duration3").text(formatTime(player3.getDuration()));
+  // $("#current-time4").text(formatTime(player4.getCurrentTime()));
+  // $("#duration4").text(formatTime(player4.getDuration()));
 }
 
 function formatTime(time) {
@@ -140,7 +139,7 @@ function updateProgressBar() {
   $("#progress-bar1").val(
     (player.getCurrentTime() / player.getDuration()) * 100
   );
-/*  $("#progress-bar2").val(
+  /*  $("#progress-bar2").val(
     (player2.getCurrentTime() / player2.getDuration()) * 100
   );
   $("#progress-bar3").val(
@@ -177,9 +176,9 @@ $("#playerCD1").on("click", function () {
   $("#singer1").text(trackSinger[index]);
   $("#playerDiscCover1").css("background-image", trackCover[index]);
   player.playVideo();
-  player2.pauseVideo();
-  player3.pauseVideo();
-  player4.pauseVideo();
+  //  player2.pauseVideo();
+  //  player3.pauseVideo();
+  // player4.pauseVideo();
 });
 
 $("#play1").on("click", function () {
