@@ -8,59 +8,21 @@ let index2 = 0;
 let index3 = 0;
 let index4 = 0;
 
-const trackName = ["I Want It That Way", "Welcome to My Life", "Não Sei Viver...", "Who Let The Dogs Out",
-                    "Good Girls", "Hotel California", "Put Your Records On", "Barbie Girl", "Sk8er Boi",
-                    "Show Me the Meaning...", "Irreplaceable", "Where Is The Love?", "I Miss You", "Monster Mash",
-                    "Toxic", "Genie In a Bottle", "Viva La Vida", "Single Ladies", "Um Minuto Para o Fim...",
-                    "My Humps" ];
-const trackSinger = ["Backstreet Boys", "Simple Plan", "CPM 22", "Baha Men",
-                    "5 Seconds of Summer", "Eagles", "Corinne Bailey Rae", "Aqua", "Avril Lavigne",
-                    "Backstreet Boys", "Beyoncé", "Black Eyed Peas", "Blink-182", "Bobby 'Boris' Pickett",
-                    "Britney Spears", "Christina Aguilera", "Coldplay", "Beyoncé", "CPM 22",
-                    "Black Eyed Peas",];
-const trackCover = ["url(https://i.imgur.com/fdHAAkT.jpg)",
-                    "url(https://i.imgur.com/NbkpB8f.jpg)",
-                    "url(https://i.imgur.com/fIxnyc1.jpg)",
-                    "url(https://i.imgur.com/CNXJri9.jpg)",
-                    "url(https://i.imgur.com/MpzkuRb.jpg)",
-                    "url(https://i.imgur.com/9Quliag.jpg)",
-                    "url(https://i.imgur.com/4fzE91e.jpg)",
-                    "url(https://i.imgur.com/S2akGLv.jpg)",
-                    "url(https://i.imgur.com/yBZpI3i.png)",
-                    "url(https://i.imgur.com/IEC5KvP.jpg)",
-                    "url(https://i.imgur.com/A41XBRl.jpg)",
-                    "url(https://i.imgur.com/Pt1XhQG.jpg)",
-                    "url(https://i.imgur.com/aKnymUb.jpg)",
-                    "url(https://i.imgur.com/wWEJoIz.jpg)",
-                    "url(https://i.imgur.com/TetHEZV.jpg)",
-                    "url(https://i.imgur.com/lEPQMFT.jpg)",
-                    "url(https://i.imgur.com/zzG9vAt.jpg)",
-                    "url(https://i.imgur.com/qlXKx3s.jpg)",
-                    "url(https://i.imgur.com/4XjOPFF.jpg)",
-                    "url(https://i.imgur.com/LXV8UFc.jpg)" ];
+const trackName = ["I Want It That Way" ];
+const trackSinger = ["Backstreet Boys" ];
+const trackCover = ["url(https://i.imgur.com/fdHAAkT.jpg)"];
                     
-const trackName2 = ["That's What I Like", "Run the World (Girls)", "Hold It Against Me", "3005",
-                    "Rockabye", "The Lazy Song", "Sorry Not Sorry", "Cake By The Ocean"];
-const trackSinger2 = ["Bruno Mars", "Beyoncé", "Britney Spears", "Childish Gambino",
-                    "Clean Bandit feat. Sean Paul...", "Bruno Mars", "Demi Lovato", "DNCE" ];
-const trackCover2 = ["url(https://i.imgur.com/Ctp3nTP.png)",
-                    "url(https://i.imgur.com/gAcX9sN.jpg)",
-                    "url(https://i.imgur.com/HkD6fIY.jpg)",
-                    "url(https://i.imgur.com/OrIxvQa.jpg)",
-                    "url(https://i.imgur.com/4vQgyie.jpg)",
-                    "url(https://i.imgur.com/eMeRkr8.jpg)",
-                    "url(https://i.imgur.com/myD5YX5.jpg)",
-                    "url(https://i.imgur.com/KcpeV2t.jpg)" ];
+const trackName2 = ["That's What I Like" ];
+const trackSinger2 = ["Bruno Mars"  ];
+const trackCover2 = ["url(https://i.imgur.com/Ctp3nTP.png)" ];
 
-const trackName3 = ["I Just Can't Wait...", "The A Team" ];
-const trackSinger3 = ["From 'The Lion King'", "Marshmello" ];
-const trackCover3 = ["url(https://i.imgur.com/r7MJ81F.jpg)",
-					"url(https://i.imgur.com/qHGhfOR.jpg)" ];
+const trackName3 = ["I Just Can't Wait..." ];
+const trackSinger3 = ["From 'The Lion King'"  ];
+const trackCover3 = ["url(https://i.imgur.com/r7MJ81F.jpg)" ];
 
-const trackName4 = ["I Just Can't Wait...", "The A Team" ];
-const trackSinger4 = ["From 'The Lion King'", "Marshmello"  ];
-const trackCover4 = ["url(https://i.imgur.com/r7MJ81F.jpg)",
-					"url(https://i.imgur.com/qHGhfOR.jpg)" ];
+const trackName4 = ["I Just Can't Wait..." ];
+const trackSinger4 = ["From 'The Lion King'" ];
+const trackCover4 = ["url(https://i.imgur.com/r7MJ81F.jpg)" ];
 
 function onYouTubeIframeAPIReady() {
     onload=player = new YT.Player('video', {
@@ -69,7 +31,7 @@ function onYouTubeIframeAPIReady() {
         videoId: '4fndeDfaWCg',
         playerVars: {
             color: 'white',
-			playlist: 'r0U0AlLVqpk,DKqSeHVb8rw,Qkuu0Lwb5EM,292XUJ5jH7U,EqPtz5qN7HM,rjOhZZyn30k,ZyhrYis509A,IvAPUKhBumU,U2H0oaGIjVg,foaLW5DGhpI,WpYeekQkAdc,s1tAYmMjLdY,FOQJPhrgFxI,LOZuxwVk7TU,kIDWgqDBNXA,dvgZkm1xWPE,4m1EFMoRFvY,tW0Z6T71E1Y,iEe_eraFWWs',
+			playlist: '',
 			controls: '0',
         },
         events: {
@@ -84,7 +46,7 @@ function onYouTubeIframeAPIReady() {
         videoId: 'PMivT7MJ41M',
         playerVars: {
             color: 'white',
-			playlist: 'N8t078YDojM,GJSm_QMO6zA,tG35R8F2j8k,papuvlVeZg8,G2o9Yd0uydM,0mHPrkhE_Tg,PAzH-YAlFYc',
+			playlist: '',
 			controls: '0',
         },
         events: {
@@ -99,7 +61,7 @@ function onYouTubeIframeAPIReady() {
         videoId: 'ysb_gxJ8LE4',
         playerVars: {
             color: 'white',
-			playlist: 'UAWcs5H-qgQ,',
+			playlist: '',
 			controls: '0',
         },
         events: {
@@ -114,7 +76,7 @@ function onYouTubeIframeAPIReady() {
         videoId: 'ysb_gxJ8LE4',
         playerVars: {
             color: 'white',
-			playlist: 'UAWcs5H-qgQ,',
+			playlist: '',
 			controls: '0',
         },
         events: {

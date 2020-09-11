@@ -8,78 +8,30 @@ let index2 = 0;
 let index3 = 0;
 let index4 = 0;
 
-const trackName = ["Il ballo delle incertezza", "Guerriero", "Vivo per lei", "Da grande", "Dejavu", "Naufrago",
-					"Faccio un casino", "Litigare", "Salutalo da parte mia", "Per La Strade Una...",
-					"Ti Avrei Voluto Dire", "Prima di ogni cosa", "Disastro", "Dopo di noi nemmeno...",
-					"Voglio solo te", "To ho voluto bene...", "Nera",
-					"Come(te)" ];
-const trackSinger = ["Ultimo", "Marco Mengoni", "Andrea Bocelli", "Benji & Fede", "Biondo", "Briga",
-					"Coez", "Davide Petrella", "Einar", "Eros Ramazzotti feat. Luis Fonsi",
-					"Federica Carta", "Fedez", "GionnyScandal", "Briga", "Irama", "Marco Mengoni", "Irama",
-					"GionnyScandal" ];
-const trackCover = ["url(https://i.imgur.com/3B89bpQ.jpg)",
-                    "url(https://i.imgur.com/A7TrAT2.jpg)", 
-                    "url(https://i.imgur.com/A7m0PKl.jpg)",
-                    "url(https://i.imgur.com/Ba1rG8M.jpg)",
-                    "url(https://i.imgur.com/WGVtBYT.jpg)",
-                    "url(https://i.imgur.com/tcYuTlt.jpg)",
-                    "url(https://i.imgur.com/f5iBfLv.jpg)",
-					"url(https://i.imgur.com/B0UtcgE.jpg)",
-					"url(https://i.imgur.com/PD9uxOa.jpg)",
-					"url(https://i.imgur.com/Z2kzfLt.jpg)",
-					"url(https://i.imgur.com/puHL2f8.jpg)",
-					"url(https://i.imgur.com/dyBzKyz.png)",
-					"url(https://i.imgur.com/OYFpieD.jpg)",
-					"url(https://i.imgur.com/AwFti3p.jpg)",
-					"url(https://i.imgur.com/rfNDOnf.jpg)",
-					"url(https://i.imgur.com/6t8VNof.jpg)",
-					"url(https://i.imgur.com/rfNDOnf.jpg)",
-					"url(https://i.imgur.com/OYFpieD.jpg)"];
+const trackName = ["I Want It That Way" ];
+const trackSinger = ["Backstreet Boys" ];
+const trackCover = ["url(https://i.imgur.com/fdHAAkT.jpg)"];
+                    
+const trackName2 = ["That's What I Like" ];
+const trackSinger2 = ["Bruno Mars"  ];
+const trackCover2 = ["url(https://i.imgur.com/Ctp3nTP.png)" ];
 
-const trackName2 = ["I Just Can't Wait...", "The A Team", "Superman (It's Not Easy)", "Hakuna Matata",
-					"Can I Be Him", "Free Fallin'", "Love Yourself", "Lego House", "Just Like You", "7 Years",
-					"She Will Be Loved", "You Can Cry", "No Sleep", "Small Bump", "Passerby",
-					"Two of Us", "Scared to Be Lonely" ];
-const trackSinger2 = ["From 'The Lion King'", "Ed Sheeran", "Five for Fighting", "From 'The Lion King'",
-					"James Arthur", "John Mayer", "Justin Bieber", "Ed Sheeran", "Louis Tomlison", "Lukas Graham",
-					"Maroon 5", "Marshmello", "Martin Garrix feat. Bonn", "Ed Sheeran", "Patrick Droney",
-					"Louis Tomlison", "Martin Garrix feat. Dua Lipa"  ];
-const trackCover2 = ["url(https://i.imgur.com/r7MJ81F.jpg)",
-						"url(https://i.imgur.com/raLthno.jpg)",
-						"url(https://i.imgur.com/oorJ4Wu.jpg)",
-						"url(https://i.imgur.com/r7MJ81F.jpg)",
-						"url(https://i.imgur.com/qAwR4Mz.jpg)",
-						"url(https://i.imgur.com/TMTUNDZ.jpg)",
-						"url(https://i.imgur.com/yeRyySp.png)",
-						"url(https://i.imgur.com/r7LOAUT.jpg)",
-						"url(https://i.imgur.com/wELXTZQ.jpg)",
-						"url(https://i.imgur.com/7O2uJuL.jpg)",
-						"url(https://i.imgur.com/n8aeWrY.jpg)",
-						"url(https://i.imgur.com/IblIb5X.jpg)",
-						"url(https://i.imgur.com/hGjNDzk.png)",
-						"url(https://i.imgur.com/r7LOAUT.jpg)",
-						"url(https://i.imgur.com/VQ4tnAq.jpg)",
-						"url(https://i.imgur.com/yzXzDxj.jpg)",
-						"url(https://i.imgur.com/qHGhfOR.jpg)" ];
+const trackName3 = ["I Just Can't Wait..." ];
+const trackSinger3 = ["From 'The Lion King'"  ];
+const trackCover3 = ["url(https://i.imgur.com/r7MJ81F.jpg)" ];
 
-const trackName3 = ["I Just Can't Wait...", "The A Team" ];
-const trackSinger3 = ["From 'The Lion King'", "Marshmello" ];
-const trackCover3 = ["url(https://i.imgur.com/r7MJ81F.jpg)",
-					"url(https://i.imgur.com/qHGhfOR.jpg)" ];
-
-const trackName4 = ["I Just Can't Wait...", "The A Team" ];
-const trackSinger4 = ["From 'The Lion King'", "Marshmello"  ];
-const trackCover4 = ["url(https://i.imgur.com/r7MJ81F.jpg)",
-					"url(https://i.imgur.com/qHGhfOR.jpg)" ];
+const trackName4 = ["I Just Can't Wait..." ];
+const trackSinger4 = ["From 'The Lion King'" ];
+const trackCover4 = ["url(https://i.imgur.com/r7MJ81F.jpg)" ];
 
 function onYouTubeIframeAPIReady() {
     onload=player = new YT.Player('video', {
         width: 600,
         height: 400,
-        videoId: 'EyZir4O5pu4',
+        videoId: '4fndeDfaWCg',
         playerVars: {
             color: 'white',
-			playlist: 'fK8LrzzC4-8,N3WOVnTz-Yo,cpX7EwbIlwg,a1K7D4RpaDs,76YtpVnwNnM,lBLRFmC5CqM,H6qqA0SOkIs,1uIWjaloYkg,mYc9jSdhwMw,HdFE2jSVxfc,o4ltA8aQdpE,2qz3wVaE4sk,atDBhNfnDaE,WejfHZdzi1I,ARqpqyA49y0,ZSLewGyjhiw,4T3ZV0zcxWA',
+			playlist: '',
 			controls: '0',
         },
         events: {
@@ -91,39 +43,40 @@ function onYouTubeIframeAPIReady() {
     onload=player2 = new YT.Player('video2', {
         width: 600,
         height: 400,
-        videoId: 'ysb_gxJ8LE4',
+        videoId: 'PMivT7MJ41M',
         playerVars: {
             color: 'white',
-			playlist: 'UAWcs5H-qgQ,GRz4FY0ZcwI,_YzVcRVJGmQ,mcXv4w-cm3U,20Ov0cDPZy8,TMSIR210mRg,UMXTZR4Z5LQ,qvXXMsiQBDg,Q0bnAmfGQC8,pUVxaYdgS_Q,XJT7I0sLdD0,JxzKNHfNRdI,A_af256mnTE,EUnfV73qN0w,5oX_gwwACls,e2vBLd5Egnk',
+			playlist: '',
 			controls: '0',
         },
         events: {
             'onReady': initialize,
             'onStateChange': onPlayerStateChange2
         }
-	})
+    })
 
-	onload=player3 = new YT.Player('video3', {
+    onload=player3 = new YT.Player('video3', {
         width: 600,
         height: 400,
         videoId: 'ysb_gxJ8LE4',
         playerVars: {
             color: 'white',
-			playlist: 'UAWcs5H-qgQ,',
+			playlist: '',
 			controls: '0',
         },
         events: {
             'onReady': initialize,
             'onStateChange': onPlayerStateChange3
         }
-	});
+    });
+    
 	onload=player4 = new YT.Player('video4', {
         width: 600,
         height: 400,
         videoId: 'ysb_gxJ8LE4',
         playerVars: {
             color: 'white',
-			playlist: 'UAWcs5H-qgQ,',
+			playlist: '',
 			controls: '0',
         },
         events: {
@@ -205,9 +158,9 @@ $('#playerCD1').on('click', function () {
     $("#singer1").text(trackSinger[index]);
     $("#playerDiscCover1").css("background-image", trackCover[index]);
     player.playVideo(); 
-    player2.pauseVideo(); 
+    player2.pauseVideo();
     player3.pauseVideo(); 
-    player4.pauseVideo(); 
+    player4.pauseVideo();  
 });
 
 $('#play1').on('click', function () { 
@@ -484,5 +437,4 @@ $('#progress-bar4').on('mouseup touchend', function (e) {
 
     // Skip video to new time.
     player4.seekTo(newTime);
-
 });
