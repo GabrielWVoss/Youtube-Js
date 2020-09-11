@@ -8,9 +8,19 @@ let index2 = 0;
 let index3 = 0;
 let index4 = 0;
 
-const trackName = ["Mad World", "Shipyards", "Hunstanton Pier"];
-const trackSinger = ["Gary Jules feat. Michael Andrews", "The Lake Poets", "Deaf Havana"];
-const trackCover = ["url(https://i.imgur.com/Iu5SKTm.jpg)", "url(https://i.imgur.com/Xu7mTMI.jpg)", "url(https://i.imgur.com/RAQG1oi.jpg)"];
+const trackName = ["Mad World", "Shipyards", "Hunstanton Pier", "Charles"];
+const trackSinger = [
+  "Gary Jules feat. Michael Andrews",
+  "The Lake Poets",
+  "Deaf Havana",
+  "Martin Phipps",
+];
+const trackCover = [
+  "url(https://i.imgur.com/Iu5SKTm.jpg)",
+  "url(https://i.imgur.com/Xu7mTMI.jpg)",
+  "url(https://i.imgur.com/RAQG1oi.jpg)",
+  "url(https://i.imgur.com/Egx0vrX.jpg)",
+];
 
 const trackName2 = ["That's What I Like"];
 const trackSinger2 = ["Bruno Mars"];
@@ -31,7 +41,7 @@ function onYouTubeIframeAPIReady() {
     videoId: "Oa-ae6_okmg",
     playerVars: {
       color: "white",
-      playlist: "NQGiN838G8M,_KBi_qw6prw",
+      playlist: "NQGiN838G8M,_KBi_qw6prw,psaccd8u24I",
       controls: "0",
     },
     events: {
