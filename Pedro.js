@@ -8,18 +8,29 @@ let index2 = 0;
 let index3 = 0;
 let index4 = 0;
 
-const trackName = ["Mad World", "Shipyards", "Hunstanton Pier", "Charles"];
+const trackName = [
+  "Mad World",
+  "Shipyards",
+  "Hunstanton Pier",
+  "Charles",
+  "Creep",
+  "Charlie Boy",
+];
 const trackSinger = [
   "Gary Jules feat. Michael Andrews",
   "The Lake Poets",
   "Deaf Havana",
   "Martin Phipps",
+  "Radiohead",
+  "The Lumineers",
 ];
 const trackCover = [
   "url(https://i.imgur.com/Iu5SKTm.jpg)",
   "url(https://i.imgur.com/Xu7mTMI.jpg)",
   "url(https://i.imgur.com/RAQG1oi.jpg)",
   "url(https://i.imgur.com/Egx0vrX.jpg)",
+  "url(https://i.imgur.com/ovDVWwc.jpg)",
+  "url(https://i.imgur.com/IJlIyIo.jpg)",
 ];
 
 const trackName2 = ["That's What I Like"];
@@ -40,7 +51,7 @@ function onYouTubeIframeAPIReady() {
     height: 400,
     videoId: "Oa-ae6_okmg",
     playerVars: {
-      playlist: "NQGiN838G8M,_KBi_qw6prw,psaccd8u24I",
+      playlist: "NQGiN838G8M,_KBi_qw6prw,psaccd8u24I,XFkzRNyygfk,Uf7lQg1_vBM",
     },
     events: {
       onReady: initialize,
