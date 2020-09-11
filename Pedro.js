@@ -40,9 +40,7 @@ function onYouTubeIframeAPIReady() {
     height: 400,
     videoId: "Oa-ae6_okmg",
     playerVars: {
-      color: "white",
       playlist: "NQGiN838G8M,_KBi_qw6prw,psaccd8u24I",
-      controls: "0",
     },
     events: {
       onReady: initialize,
@@ -100,14 +98,16 @@ function onYouTubeIframeAPIReady() {
 
 function initialize() {
   // Update the controls on load
+  console.log("Here");
+
   updateTimerDisplay();
+  console.log("Here2");
+
   updateProgressBar();
 
-  console.log("Update");
   // Start interval to update elapsed time display and
   // the elapsed part of the progress bar every second.
   time_update_interval = setInterval(function () {
-    console.log("Update");
     updateTimerDisplay();
     updateProgressBar();
   }, 1000);
@@ -115,15 +115,17 @@ function initialize() {
 
 // This function is called by initialize()
 function updateTimerDisplay() {
+  console.log("Here2");
+
   // Update current time text display.
   $("#current-time1").text(formatTime(player.getCurrentTime()));
   $("#duration1").text(formatTime(player.getDuration()));
-  $("#current-time2").text(formatTime(player2.getCurrentTime()));
-  $("#duration2").text(formatTime(player2.getDuration()));
-  $("#current-time3").text(formatTime(player3.getCurrentTime()));
-  $("#duration3").text(formatTime(player3.getDuration()));
-  $("#current-time4").text(formatTime(player4.getCurrentTime()));
-  $("#duration4").text(formatTime(player4.getDuration()));
+ // $("#current-time2").text(formatTime(player2.getCurrentTime()));
+ // $("#duration2").text(formatTime(player2.getDuration()));
+ // $("#current-time3").text(formatTime(player3.getCurrentTime()));
+ // $("#duration3").text(formatTime(player3.getDuration()));
+ // $("#current-time4").text(formatTime(player4.getCurrentTime()));
+ // $("#duration4").text(formatTime(player4.getDuration()));
 }
 
 function formatTime(time) {
@@ -143,7 +145,7 @@ function updateProgressBar() {
   $("#progress-bar1").val(
     (player.getCurrentTime() / player.getDuration()) * 100
   );
-  $("#progress-bar2").val(
+/*  $("#progress-bar2").val(
     (player2.getCurrentTime() / player2.getDuration()) * 100
   );
   $("#progress-bar3").val(
@@ -151,7 +153,7 @@ function updateProgressBar() {
   );
   $("#progress-bar4").val(
     (player4.getCurrentTime() / player4.getDuration()) * 100
-  );
+  ); */
 }
 
 // Player 1
@@ -236,7 +238,7 @@ $("#progress-bar1").on("mouseup touchend", function (e) {
 
 // Player 2
 
-function onPlayerStateChange2(event) {
+/* function onPlayerStateChange2(event) {
   if (
     index2 >= 0 &&
     index2 < trackName2.length - 1 &&
@@ -473,3 +475,4 @@ $("#progress-bar4").on("mouseup touchend", function (e) {
   // Skip video to new time.
   player4.seekTo(newTime);
 });
+*/
