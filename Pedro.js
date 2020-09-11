@@ -17,7 +17,8 @@ const trackName = [
   "Charlie Boy",
   "Harmony Hall",
   "Breezeblocks",
-  
+  "Hey There Delilah",
+  "12:45 Stripped"
 ];
 const trackSinger = [
   "Gary Jules feat. Michael Andrews",
@@ -27,7 +28,9 @@ const trackSinger = [
   "Radiohead",
   "The Lumineers",
   "Vampire Weekend",
-  "Alt J"
+  "Alt J",
+  "Plain White T's",
+  "Etham"
 ];
 const trackCover = [
   "url(https://i.imgur.com/Iu5SKTm.jpg)",
@@ -37,7 +40,9 @@ const trackCover = [
   "url(https://i.imgur.com/ovDVWwc.jpg)",
   "url(https://i.imgur.com/IJlIyIo.jpg)",
   "url(https://i.imgur.com/TgeGX3P.jpg)",
-  "url(https://i.imgur.com/4x4clH0.jpg)"
+  "url(https://i.imgur.com/4x4clH0.jpg)",
+  "url(https://i.imgur.com/mujDaXd.jpg)",
+  "url(https://i.imgur.com/3oGvqgR.jpg)"
 ];
 
 const trackName2 = ["That's What I Like"];
@@ -58,7 +63,7 @@ function onYouTubeIframeAPIReady() {
     height: 400,
     videoId: "Oa-ae6_okmg",
     playerVars: {
-      playlist: "NQGiN838G8M,_KBi_qw6prw,psaccd8u24I,XFkzRNyygfk,Uf7lQg1_vBM,IlkTVMMkCP4,rVeMiVU77wo",
+      playlist: "NQGiN838G8M,_KBi_qw6prw,psaccd8u24I,XFkzRNyygfk,Uf7lQg1_vBM,IlkTVMMkCP4,rVeMiVU77wo,h_m-BjrxmgI,GhWnG7YhcEE",
     },
     events: {
       onReady: initialize,
