@@ -45,9 +45,42 @@ const trackCover = [
   "url(https://i.imgur.com/YZCiUw6.jpg)",
 ];
 
-const trackName2 = ["That's What I Like"];
-const trackSinger2 = ["Bruno Mars"];
-const trackCover2 = ["url(https://i.imgur.com/Ctp3nTP.png)"];
+const trackName2 = [
+  "Rondini Al Guinzaglio",
+  "Crazy World",
+  "Imbranato",
+  "If Our Love Is Wrong",
+  "Solo Te E Me",
+  "Tenerife Sea",
+  "D'improvviso",
+  "Halo",
+  "Onde Você Mora?",
+  "Marry Me"
+];
+const trackSinger2 = [
+  "Ultimo",
+  "The Script feat. Christy Dignam",
+  "Tiziano Ferro",
+  "Calum Scott",
+  "GionnyScandal feat. Giulia Jean",
+  "Ed Sheeran",
+  "Lorenzo Fragola",
+  "Beyonce",
+  "Nando Reis",
+  "Train"
+];
+const trackCover2 = [
+  "url(https://i.imgur.com/ANOijA3.jpg)",
+  "url(https://i.imgur.com/mF7K2RG.jpg)",
+  "url(https://i.imgur.com/pUYe72k.jpg)",
+  "url(https://i.imgur.com/EfwwGbj.jpg)",
+  "url(https://i.imgur.com/RihA9aM.jpg)",
+  "url(https://i.imgur.com/ep2N44z.jpg)",
+  "url(https://i.imgur.com/IJHkOtE.jpg)",
+  "url(https://i.imgur.com/juSs6We.jpg)",
+  "url(https://i.imgur.com/Sv278vX.jpg)",
+  "url(https://i.imgur.com/Bj2sLko.jpg)"
+];
 
 const trackName3 = ["I Just Can't Wait..."];
 const trackSinger3 = ["From 'The Lion King'"];
@@ -72,14 +105,12 @@ function onYouTubeIframeAPIReady() {
     },
   });
 
-  /* onload = player2 = new YT.Player("video2", {
+  onload = player2 = new YT.Player("video2", {
     width: 600,
     height: 400,
-    videoId: "PMivT7MJ41M",
+    videoId: "dIHWHuy0moY",
     playerVars: {
-      color: "white",
-      playlist: "",
-      controls: "0",
+      playlist: "veSohk4y0XI,bP_uEhOTcdE,gegW-vR_UHo,j5-zyPQiygU,gFH7aFfM2Zw,bnVUHWCynig,U7uo53QkiNY,vyto0Zhi154",
     },
     events: {
       onReady: initialize,
@@ -87,7 +118,7 @@ function onYouTubeIframeAPIReady() {
     },
   });
 
-  onload = player3 = new YT.Player("video3", {
+  /* onload = player3 = new YT.Player("video3", {
     width: 600,
     height: 400,
     videoId: "ysb_gxJ8LE4",
@@ -138,8 +169,8 @@ function updateTimerDisplay() {
   // Update current time text display.
   $("#current-time1").text(formatTime(player.getCurrentTime()));
   $("#duration1").text(formatTime(player.getDuration()));
-  // $("#current-time2").text(formatTime(player2.getCurrentTime()));
-  // $("#duration2").text(formatTime(player2.getDuration()));
+  $("#current-time2").text(formatTime(player2.getCurrentTime()));
+  $("#duration2").text(formatTime(player2.getDuration()));
   // $("#current-time3").text(formatTime(player3.getCurrentTime()));
   // $("#duration3").text(formatTime(player3.getDuration()));
   // $("#current-time4").text(formatTime(player4.getCurrentTime()));
@@ -200,7 +231,7 @@ $("#playerCD1").on("click", function () {
   $("#singer1").text(trackSinger[index]);
   $("#playerDiscCover1").css("background-image", trackCover[index]);
   player.playVideo();
-  //  player2.pauseVideo();
+  player2.pauseVideo();
   //  player3.pauseVideo();
   // player4.pauseVideo();
 });
@@ -256,7 +287,7 @@ $("#progress-bar1").on("mouseup touchend", function (e) {
 
 // Player 2
 
-/* function onPlayerStateChange2(event) {
+function onPlayerStateChange2(event) {
   if (
     index2 >= 0 &&
     index2 < trackName2.length - 1 &&
@@ -288,8 +319,8 @@ $("#playerCD2").on("click", function () {
   $("#playerDiscCover2").css("background-image", trackCover2[index2]);
   player.pauseVideo();
   player2.playVideo();
-  player3.pauseVideo();
-  player4.pauseVideo();
+  //  player3.pauseVideo();
+  //  player4.pauseVideo();
 });
 
 $("#pause2").on("click", function () {
@@ -334,7 +365,7 @@ $("#progress-bar2").on("mouseup touchend", function (e) {
   player2.seekTo(newTime);
 });
 
-// Player 3 (Ship)
+/* // Player 3 (Ship)
 
 function onPlayerStateChange3(event) {
   if (
