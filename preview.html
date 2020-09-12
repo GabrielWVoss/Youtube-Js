@@ -5,11 +5,15 @@
 <style>
 
 #playerYoutube {
-    --colorBg: #559979;
+    --colorBg: #af5c5c;
+    --colorBg2: rgb(167, 98, 127);
     --colorRanger: white;
 
-    --coverOne: url(https://i.imgur.com/93Yd8Tc.png);
-    --backOne:  url(https://media3.giphy.com/media/3oKIPeqEzFVNkSdfiM/source.gif);
+    --coverOne: url(https://i.imgur.com/0zcV72Z.png);
+    --backOne:  url(https://i.makeagif.com/media/9-20-2016/kFGdHy.gif);
+
+    --coverTwo: url(https://images2.imgbox.com/f9/ea/Hhi8OwW5_o.png);
+    --backTwo:  url(https://i.makeagif.com/media/9-20-2016/kFGdHy.gif);
 
     --shadow: 0px 0px 15px -5px rgba(0,0,0,0.85);
 }
@@ -71,10 +75,43 @@
 </div> </div>
 </div>
 
+<div class="playerCD"> 
+<div id="video2"></div>
+
+<input type="radio" id="CDTwo" name="Player">
+<label for="CDTwo" class="playerCDCover" id="playerCD2" style="background-image: var(--coverTwo);"> </label>
+<div class="playerDisc" id="playerDisc2"> <div class="playerDiscCover" id="playerDiscCover2"> </div> </div>
+
+<div class="playerAfterDisc"> </div>
+
+<div class="playerInfos" style="background-color: var(--colorBg2);"> 
+
+<div class="playerTInfos"> 
+<h3 id="title2"> </h3> 
+<h5 id="singer2"> </h5> 
+
+<input type="range" id="progress-bar2" value="0">
+
+<div class="playerTime"> 
+<div id="current-time2"> </div>
+<div id="duration2"> </div>   
+</div>
+
+<div class="playerControl"> 
+<i id="prev2" class="Pcontrols material-icons">fast_rewind</i>
+<i id="play2" class="Pcontrols material-icons">play_arrow</i>
+<i id="pause2" class="Pcontrols material-icons" style="display: none;">pause </i>   
+<i id="next2" class="Pcontrols material-icons">fast_forward</i>
+</div>
+
+</div> </div>
+</div>
+
+
 </div>
 
 </body>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://www.youtube.com/iframe_api"></script>
-<script src="Pedro.js"></script>
+<script src="Mikkel.js"></script>
