@@ -55,7 +55,7 @@ const trackName2 = [
   "D'improvviso",
   "Halo",
   "Onde Você Mora?",
-  "Marry Me"
+  "Marry Me",
 ];
 const trackSinger2 = [
   "Ultimo",
@@ -67,7 +67,7 @@ const trackSinger2 = [
   "Lorenzo Fragola",
   "Beyonce",
   "Nando Reis",
-  "Train"
+  "Train",
 ];
 const trackCover2 = [
   "url(https://i.imgur.com/ANOijA3.jpg)",
@@ -79,7 +79,7 @@ const trackCover2 = [
   "url(https://i.imgur.com/IJHkOtE.jpg)",
   "url(https://i.imgur.com/juSs6We.jpg)",
   "url(https://i.imgur.com/Sv278vX.jpg)",
-  "url(https://i.imgur.com/Bj2sLko.jpg)"
+  "url(https://i.imgur.com/Bj2sLko.jpg)",
 ];
 
 const trackName3 = ["I Just Can't Wait..."];
@@ -110,7 +110,8 @@ function onYouTubeIframeAPIReady() {
     height: 400,
     videoId: "dIHWHuy0moY",
     playerVars: {
-      playlist: "veSohk4y0XI,bP_uEhOTcdE,gegW-vR_UHo,j5-zyPQiygU,gFH7aFfM2Zw,bnVUHWCynig,U7uo53QkiNY,vyto0Zhi154",
+      playlist:
+        "veSohk4y0XI,bP_uEhOTcdE,gegW-vR_UHo,j5-zyPQiygU,gFH7aFfM2Zw,bnVUHWCynig,U7uo53QkiNY,vyto0Zhi154",
     },
     events: {
       onReady: initialize,
@@ -194,10 +195,10 @@ function updateProgressBar() {
   $("#progress-bar1").val(
     (player.getCurrentTime() / player.getDuration()) * 100
   );
-  /*  $("#progress-bar2").val(
+  $("#progress-bar2").val(
     (player2.getCurrentTime() / player2.getDuration()) * 100
   );
-  $("#progress-bar3").val(
+  /* $("#progress-bar3").val(
     (player3.getCurrentTime() / player3.getDuration()) * 100
   );
   $("#progress-bar4").val(
