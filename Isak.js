@@ -30,7 +30,7 @@ const trackSinger = [
   "Drake",
   "Choice feat. Xamã",
   "G-Eazy feat. Remo",
-  "Post Malone"
+  "Post Malone",
 ];
 const trackCover = [
   "url(https://i.imgur.com/j9f4XR0.jpg)",
@@ -42,12 +42,45 @@ const trackCover = [
   "url(https://i.imgur.com/qrWZ6QN.jpg)",
   "url(https://i.imgur.com/95olSnM.jpg)",
   "url(https://i.imgur.com/syUbFBk.jpg)",
-  "url(https://i.imgur.com/I5oYj7h.jpg)"
+  "url(https://i.imgur.com/I5oYj7h.jpg)",
 ];
 
-const trackName2 = ["That's What I Like"];
-const trackSinger2 = ["Bruno Mars"];
-const trackCover2 = ["url(https://i.imgur.com/Ctp3nTP.png)"];
+const trackName2 = [
+  "Sem Roteiro",
+  "Lie",
+  "DM",
+  "Stay",
+  "Sereia",
+  "idfc",
+  "Baila Mais",
+  "TVTB",
+  "LEAL",
+  "I Love It",
+];
+const trackSinger2 = [
+  "Katari SC",
+  "NF",
+  "Matheus Queiroz feat. Go Dassisti",
+  "Post Malone",
+  "Costa Gold feat. Jay Kay",
+  "blackbear",
+  "Orgânico, SóCIRO",
+  "Fedez feat. Dark Polo Gang",
+  "Djonga",
+  "Kanye West feat. Lil Pump",
+];
+const trackCover2 = [
+  "url(https://i.imgur.com/86GkJlE.jpg)",
+  "url(https://i.imgur.com/TNVK9Qq.jpg)",
+  "url(https://i.imgur.com/WHjU9hn.jpg)",
+  "url(https://i.imgur.com/88Klxbp.jpg)",
+  "url(https://i.imgur.com/gEG7otc.jpg)",
+  "url(https://i.imgur.com/tdhVcRl.jpg)",
+  "url(https://i.imgur.com/MHRrsqR.jpg)",
+  "url(https://i.imgur.com/AQat7sp.jpg)",
+  "url(https://i.imgur.com/8KCV9xl.jpg)",
+  "url(https://i.imgur.com/eEDD3l6.jpg)",
+];
 
 const trackName3 = ["I Just Can't Wait..."];
 const trackSinger3 = ["From 'The Lion King'"];
@@ -72,14 +105,13 @@ function onYouTubeIframeAPIReady() {
     },
   });
 
-  /* onload = player2 = new YT.Player("video2", {
+  onload = player2 = new YT.Player("video2", {
     width: 600,
     height: 400,
-    videoId: "PMivT7MJ41M",
+    videoId: "g7rpvWgK1QQ",
     playerVars: {
-      color: "white",
-      playlist: "",
-      controls: "0",
+      playlist:
+        "B1dmRjyN0CQ, tguduMQbmE8, 4Ukh9aQBzWc, eWPhsUrVqhc,v0pjeUTad2I, suhKnlhyMao, ePLH3kl7yXs, sEhOY55CSng,   Y_ixswnkhtA",
     },
     events: {
       onReady: initialize,
@@ -87,7 +119,7 @@ function onYouTubeIframeAPIReady() {
     },
   });
 
-  onload = player3 = new YT.Player("video3", {
+  /* onload = player3 = new YT.Player("video3", {
     width: 600,
     height: 400,
     videoId: "ysb_gxJ8LE4",
@@ -138,8 +170,8 @@ function updateTimerDisplay() {
   // Update current time text display.
   $("#current-time1").text(formatTime(player.getCurrentTime()));
   $("#duration1").text(formatTime(player.getDuration()));
-  // $("#current-time2").text(formatTime(player2.getCurrentTime()));
-  // $("#duration2").text(formatTime(player2.getDuration()));
+  $("#current-time2").text(formatTime(player2.getCurrentTime()));
+  $("#duration2").text(formatTime(player2.getDuration()));
   // $("#current-time3").text(formatTime(player3.getCurrentTime()));
   // $("#duration3").text(formatTime(player3.getDuration()));
   // $("#current-time4").text(formatTime(player4.getCurrentTime()));
@@ -163,10 +195,10 @@ function updateProgressBar() {
   $("#progress-bar1").val(
     (player.getCurrentTime() / player.getDuration()) * 100
   );
-  /*  $("#progress-bar2").val(
+  $("#progress-bar2").val(
     (player2.getCurrentTime() / player2.getDuration()) * 100
   );
-  $("#progress-bar3").val(
+  /*  $("#progress-bar3").val(
     (player3.getCurrentTime() / player3.getDuration()) * 100
   );
   $("#progress-bar4").val(
@@ -200,7 +232,7 @@ $("#playerCD1").on("click", function () {
   $("#singer1").text(trackSinger[index]);
   $("#playerDiscCover1").css("background-image", trackCover[index]);
   player.playVideo();
-  //  player2.pauseVideo();
+  player2.pauseVideo();
   //  player3.pauseVideo();
   // player4.pauseVideo();
 });
@@ -256,7 +288,7 @@ $("#progress-bar1").on("mouseup touchend", function (e) {
 
 // Player 2
 
-/* function onPlayerStateChange2(event) {
+function onPlayerStateChange2(event) {
   if (
     index2 >= 0 &&
     index2 < trackName2.length - 1 &&
@@ -288,8 +320,8 @@ $("#playerCD2").on("click", function () {
   $("#playerDiscCover2").css("background-image", trackCover2[index2]);
   player.pauseVideo();
   player2.playVideo();
-  player3.pauseVideo();
-  player4.pauseVideo();
+  //  player3.pauseVideo();
+  //  player4.pauseVideo();
 });
 
 $("#pause2").on("click", function () {
@@ -334,7 +366,7 @@ $("#progress-bar2").on("mouseup touchend", function (e) {
   player2.seekTo(newTime);
 });
 
-// Player 3 (Ship)
+/*// Player 3 (Ship)
 
 function onPlayerStateChange3(event) {
   if (
